@@ -15,7 +15,7 @@ public class InputPageTest extends BaseTest {
     public void tempSetUp(){
         open("/edit");
     }
-
+ //--Test
     @Test(groups = {"Smoke"})
     @Author("Rahul")
     public void testEnterFullName() throws InterruptedException {
