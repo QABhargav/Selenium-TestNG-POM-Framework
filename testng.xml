@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="methods" thread-count="23">
+<!--    <suite name="Suite" parallel="classes" thread-count="8">-->
+
+    <test name="ParallelClasses">
+        <classes>
+            <class name="com.automation.selenium.tests.alert.AlertPageTest"/>
+            <class name="com.automation.selenium.tests.button.ButtonPageTest"/>
+<!--            <class name="com.automation.selenium.tests.frame.FramePageTest"/>-->
+            <class name="com.automation.selenium.tests.input.InputPageTest"/>
+            <class name="com.automation.selenium.tests.select.SelectPageTest"/>
+            <class name="com.automation.selenium.tests.LoginTest"/>
+        </classes>
+    </test>
+
+</suite>
