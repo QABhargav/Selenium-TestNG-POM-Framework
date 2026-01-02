@@ -8,7 +8,8 @@
         <classes>
             <class name="com.automation.selenium.tests.alert.AlertPageTest"/>
             <class name="com.automation.selenium.tests.button.ButtonPageTest"/>
-<!--            <class name="com.automation.selenium.tests.frame.FramePageTest"/>-->
+            <class name="com.automation.selenium.tests.frame.FramePageTest"/>
+            <class name="com.automation.selenium.tests.form.FormPageTest"/>
             <class name="com.automation.selenium.tests.input.InputPageTest"/>
             <class name="com.automation.selenium.tests.select.SelectPageTest"/>
             <class name="com.automation.selenium.tests.LoginTest"/>

@@ -3,14 +3,14 @@
 <suite thread-count="23" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="23" parallel="methods" name="ParallelClasses(failed)" verbose="0">
     <classes>
-      <class name="com.automation.selenium.tests.button.ButtonPageTest">
+      <class name="com.automation.selenium.tests.form.FormPageTest">
         <methods>
           <include name="launchApplication"/>
-          <include name="shouldVerifyDisabledButtonState"/>
+          <include name="testPhoneNumberPattern_DemoFailedTestCase"/>
           <include name="tearDown"/>
           <include name="tempSetUp"/>
         </methods>
-      </class> <!-- com.automation.selenium.tests.button.ButtonPageTest -->
+      </class> <!-- com.automation.selenium.tests.form.FormPageTest -->
     </classes>
   </test> <!-- ParallelClasses(failed) -->
 </suite> <!-- Failed suite [Suite] -->

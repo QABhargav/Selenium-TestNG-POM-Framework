@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Student LMS Project Automation Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 31, 2025 05:49:04 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jan 2, 2026 02:43:11 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -78,6 +83,7 @@
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -91,51 +97,68 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">Smoke</a><a class="dropdown-item" href="#">Regression</a><a class="dropdown-item" href="#">Sanity</a>
+<a class="dropdown-item" href="#">Smoke</a><a class="dropdown-item" href="#">Sanity</a><a class="dropdown-item" href="#">Regression</a><a class="dropdown-item" href="#">Critical</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
-          author=""
-          tag=""
+        <li class="test-item"  status="pass" test-id="1"
+          author="Bhargav"
+          tag="Sanity Regression"
           device="">
           <div class="test-detail">
-            <p class="name">exampleTestCaseFirst</p>
+            <p class="name">shouldEnterEmailInsideInnerIframe</p>
             <p class="text-sm">
-              <span>5:49:14 pm</span> / <span>00:00:00:020</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>2:43:19 pm</span> / <span>00:00:06:972</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">exampleTestCaseFirst</h5>
-<span class='badge badge-success'>12.31.2025 5:49:14 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:14 pm</span>
-<span class='badge badge-default'>00:00:00:020</span>
+<h5 class="test-status text-pass">shouldEnterEmailInsideInnerIframe</h5>
+<span class='badge badge-success'>01.02.2026 2:43:19 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:26 pm</span>
+<span class='badge badge-default'>00:00:06:972</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
+<span class="badge badge-pill badge-default">Sanity</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:49:14 pm</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:19 pm</td>
         <td>
-          This is an example of a failed test case
+          User switches to inner iframe
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:25 pm</td>
+        <td>
+          User enters email address inside inner iframe
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:14 pm</td>
+        <td>2:43:26 pm</td>
+        <td>
+          Email entered successfully inside inner iframe
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:26 pm</td>
         <td>
           Test Passed
         </td>
@@ -147,12 +170,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="2"
           author="Bhargav"
-          tag="Regression Smoke"
+          tag="Sanity Regression"
           device="">
           <div class="test-detail">
-            <p class="name">shouldHandleSimpleAlert</p>
+            <p class="name">shouldClearInputField</p>
             <p class="text-sm">
-              <span>5:49:22 pm</span> / <span>00:00:07:331</span>
+              <span>2:43:21 pm</span> / <span>00:00:00:460</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -160,11 +183,141 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">shouldHandleSimpleAlert</h5>
-<span class='badge badge-success'>12.31.2025 5:49:22 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:29 pm</span>
-<span class='badge badge-default'>00:00:07:331</span>
+<h5 class="test-status text-pass">shouldClearInputField</h5>
+<span class='badge badge-success'>01.02.2026 2:43:21 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:21 pm</span>
+<span class='badge badge-default'>00:00:00:460</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
+<span class="badge badge-pill badge-default">Sanity</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:21 pm</td>
+        <td>
+          User clears the text from input field
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:21 pm</td>
+        <td>
+          System should remove all text from input field
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:21 pm</td>
+        <td>
+          Input field cleared successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:21 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author="Jay"
+          tag="Regression Smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">shouldPerformLongPressOnButton</p>
+            <p class="text-sm">
+              <span>2:43:21 pm</span> / <span>00:00:03:545</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">shouldPerformLongPressOnButton</h5>
+<span class='badge badge-success'>01.02.2026 2:43:21 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:25 pm</span>
+<span class='badge badge-default'>00:00:03:545</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Jay</span>
+<span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:21 pm</td>
+        <td>
+          User performs long press on button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:24 pm</td>
+        <td>
+          System should update text after long press
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:25 pm</td>
+        <td>
+          Long press action verified successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:25 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author="Bhargav"
+          tag="Regression Smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">shouldEnterFullName</p>
+            <p class="text-sm">
+              <span>2:43:25 pm</span> / <span>00:00:00:377</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">shouldEnterFullName</h5>
+<span class='badge badge-success'>01.02.2026 2:43:25 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:25 pm</span>
+<span class='badge badge-default'>00:00:00:377</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -179,158 +332,28 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:22 pm</td>
+        <td>2:43:25 pm</td>
         <td>
-          User triggers simple alert
+          User enters full name into Full Name field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:29 pm</td>
+        <td>2:43:25 pm</td>
         <td>
-          System should display correct simple alert message
+          System should display entered full name
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:29 pm</td>
+        <td>2:43:25 pm</td>
         <td>
-          Simple alert handled successfully
+          Full name entered successfully
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:29 pm</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="3"
-          author="Bhargav"
-          tag="Sanity Regression"
-          device="">
-          <div class="test-detail">
-            <p class="name">shouldSelectLanguageByIndex</p>
-            <p class="text-sm">
-              <span>5:49:25 pm</span> / <span>00:00:02:841</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">shouldSelectLanguageByIndex</h5>
-<span class='badge badge-success'>12.31.2025 5:49:25 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:28 pm</span>
-<span class='badge badge-default'>00:00:02:841</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
-<span class="badge badge-pill badge-default">Sanity</span>
-<span class="badge badge-pill badge-default">Regression</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:25 pm</td>
-        <td>
-          User selects programming language by index
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:28 pm</td>
-        <td>
-          System should display selected language confirmation
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:28 pm</td>
-        <td>
-          Language selected by index verified successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:28 pm</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="4"
-          author="Bhargav"
-          tag="Sanity Regression"
-          device="">
-          <div class="test-detail">
-            <p class="name">shouldGetTextFromDisabledField</p>
-            <p class="text-sm">
-              <span>5:49:26 pm</span> / <span>00:00:00:185</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">shouldGetTextFromDisabledField</h5>
-<span class='badge badge-success'>12.31.2025 5:49:26 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:26 pm</span>
-<span class='badge badge-default'>00:00:00:185</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
-<span class="badge badge-pill badge-default">Sanity</span>
-<span class="badge badge-pill badge-default">Regression</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:26 pm</td>
-        <td>
-          User reads value from disabled input field
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:26 pm</td>
-        <td>
-          System should return value from disabled field
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:26 pm</td>
-        <td>
-          Value fetched from disabled field successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:26 pm</td>
+        <td>2:43:25 pm</td>
         <td>
           Test Passed
         </td>
@@ -347,7 +370,7 @@
           <div class="test-detail">
             <p class="name">shouldVerifyNonEditableField</p>
             <p class="text-sm">
-              <span>5:49:26 pm</span> / <span>00:00:00:145</span>
+              <span>2:43:25 pm</span> / <span>00:00:06:151</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -356,9 +379,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">shouldVerifyNonEditableField</h5>
-<span class='badge badge-success'>12.31.2025 5:49:26 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:26 pm</span>
-<span class='badge badge-default'>00:00:00:145</span>
+<span class='badge badge-success'>01.02.2026 2:43:25 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:31 pm</span>
+<span class='badge badge-default'>00:00:06:151</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -374,28 +397,28 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:26 pm</td>
+        <td>2:43:25 pm</td>
         <td>
           User checks value of non-editable input field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:26 pm</td>
+        <td>2:43:31 pm</td>
         <td>
           System should not allow any value in non-editable field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:26 pm</td>
+        <td>2:43:31 pm</td>
         <td>
           Non-editable field validated successfully
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:26 pm</td>
+        <td>2:43:31 pm</td>
         <td>
           Test Passed
         </td>
@@ -406,13 +429,13 @@
           </div>
         </li>
         <li class="test-item"  status="pass" test-id="6"
-          author="Jay"
+          author="Bhargav"
           tag="Regression Smoke"
           device="">
           <div class="test-detail">
-            <p class="name">shouldNavigateToHomePageOnHomeButtonClick</p>
+            <p class="name">shouldAppendTextToInputField</p>
             <p class="text-sm">
-              <span>5:49:27 pm</span> / <span>00:00:03:124</span>
+              <span>2:43:26 pm</span> / <span>00:00:00:362</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -420,16 +443,16 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">shouldNavigateToHomePageOnHomeButtonClick</h5>
-<span class='badge badge-success'>12.31.2025 5:49:27 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:30 pm</span>
-<span class='badge badge-default'>00:00:03:124</span>
+<h5 class="test-status text-pass">shouldAppendTextToInputField</h5>
+<span class='badge badge-success'>01.02.2026 2:43:26 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:26 pm</span>
+<span class='badge badge-default'>00:00:00:362</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Jay</span>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
 <span class="badge badge-pill badge-default">Regression</span>
 <span class="badge badge-pill badge-default">Smoke</span></div>
 </div>
@@ -439,28 +462,28 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:27 pm</td>
+        <td>2:43:26 pm</td>
         <td>
-          User clicks on Home button
+          User appends text to existing input value
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:30 pm</td>
+        <td>2:43:26 pm</td>
         <td>
-          System should navigate user to Home page
+          System should retain existing text and append new text
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 pm</td>
+        <td>2:43:26 pm</td>
         <td>
-          User successfully navigated to Home page
+          Text appended successfully
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 pm</td>
+        <td>2:43:26 pm</td>
         <td>
           Test Passed
         </td>
@@ -477,7 +500,7 @@
           <div class="test-detail">
             <p class="name">shouldFetchXAndYPositionOfButton</p>
             <p class="text-sm">
-              <span>5:49:27 pm</span> / <span>00:00:00:077</span>
+              <span>2:43:27 pm</span> / <span>00:00:00:079</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -486,9 +509,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">shouldFetchXAndYPositionOfButton</h5>
-<span class='badge badge-success'>12.31.2025 5:49:27 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:27 pm</span>
-<span class='badge badge-default'>00:00:00:077</span>
+<span class='badge badge-success'>01.02.2026 2:43:27 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:27 pm</span>
+<span class='badge badge-default'>00:00:00:079</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -504,28 +527,28 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:27 pm</td>
+        <td>2:43:27 pm</td>
         <td>
           User checks X and Y position of button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:27 pm</td>
+        <td>2:43:27 pm</td>
         <td>
           System should return valid X and Y coordinates
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:27 pm</td>
+        <td>2:43:27 pm</td>
         <td>
           Button position fetched successfully
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:27 pm</td>
+        <td>2:43:27 pm</td>
         <td>
           Test Passed
         </td>
@@ -537,12 +560,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="8"
           author="Bhargav"
-          tag="Regression Smoke"
+          tag="Sanity Regression"
           device="">
           <div class="test-detail">
-            <p class="name">shouldAppendTextToInputField</p>
+            <p class="name">testEmptyFirstName</p>
             <p class="text-sm">
-              <span>5:49:27 pm</span> / <span>00:00:00:417</span>
+              <span>2:43:29 pm</span> / <span>00:00:05:668</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -550,18 +573,18 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">shouldAppendTextToInputField</h5>
-<span class='badge badge-success'>12.31.2025 5:49:27 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:27 pm</span>
-<span class='badge badge-default'>00:00:00:417</span>
+<h5 class="test-status text-pass">testEmptyFirstName</h5>
+<span class='badge badge-success'>01.02.2026 2:43:29 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:34 pm</span>
+<span class='badge badge-default'>00:00:05:668</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
-<span class="badge badge-pill badge-default">Regression</span>
-<span class="badge badge-pill badge-default">Smoke</span></div>
+<span class="badge badge-pill badge-default">Sanity</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -569,28 +592,28 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:27 pm</td>
+        <td>2:43:34 pm</td>
         <td>
-          User appends text to existing input value
+          User filled form without entering first name
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:27 pm</td>
+        <td>2:43:34 pm</td>
         <td>
-          System should retain existing text and append new text
+          User submitted the form
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:27 pm</td>
+        <td>2:43:34 pm</td>
         <td>
-          Text appended successfully
+          First name mandatory validation verified successfully
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:27 pm</td>
+        <td>2:43:34 pm</td>
         <td>
           Test Passed
         </td>
@@ -601,13 +624,13 @@
           </div>
         </li>
         <li class="test-item"  status="pass" test-id="9"
-          author="Jay"
-          tag="Sanity Regression"
+          author="Bhargav"
+          tag="Regression"
           device="">
           <div class="test-detail">
-            <p class="name">shouldVerifyButtonDimensions</p>
+            <p class="name">dataDrivenTestDevelopment_JsonData</p>
             <p class="text-sm">
-              <span>5:49:27 pm</span> / <span>00:00:00:118</span>
+              <span>2:43:29 pm</span> / <span>00:00:11:774</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -615,17 +638,16 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">shouldVerifyButtonDimensions</h5>
-<span class='badge badge-success'>12.31.2025 5:49:27 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:27 pm</span>
-<span class='badge badge-default'>00:00:00:118</span>
+<h5 class="test-status text-pass">dataDrivenTestDevelopment_JsonData</h5>
+<span class='badge badge-success'>01.02.2026 2:43:29 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:41 pm</span>
+<span class='badge badge-default'>00:00:11:774</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Jay</span>
-<span class="badge badge-pill badge-default">Sanity</span>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
 <span class="badge badge-pill badge-default">Regression</span></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -634,28 +656,28 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:27 pm</td>
+        <td>2:43:29 pm</td>
         <td>
-          User checks width and height of button
+          User fills form using JSON test data
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:27 pm</td>
+        <td>2:43:39 pm</td>
         <td>
-          System should display correct button dimensions
+          User submits the form
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:27 pm</td>
+        <td>2:43:41 pm</td>
         <td>
-          Button dimensions verified successfully
+          Form submitted successfully using JSON data
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:27 pm</td>
+        <td>2:43:41 pm</td>
         <td>
           Test Passed
         </td>
@@ -667,12 +689,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="10"
           author="Bhargav"
-          tag="Regression Smoke"
+          tag="Sanity Regression"
           device="">
           <div class="test-detail">
-            <p class="name">shouldSelectFruitFromDropdown</p>
+            <p class="name">shouldGetTextFromDisabledField</p>
             <p class="text-sm">
-              <span>5:49:27 pm</span> / <span>00:00:02:552</span>
+              <span>2:43:30 pm</span> / <span>00:00:00:649</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -680,18 +702,18 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">shouldSelectFruitFromDropdown</h5>
-<span class='badge badge-success'>12.31.2025 5:49:27 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:30 pm</span>
-<span class='badge badge-default'>00:00:02:552</span>
+<h5 class="test-status text-pass">shouldGetTextFromDisabledField</h5>
+<span class='badge badge-success'>01.02.2026 2:43:30 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:31 pm</span>
+<span class='badge badge-default'>00:00:00:649</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
-<span class="badge badge-pill badge-default">Regression</span>
-<span class="badge badge-pill badge-default">Smoke</span></div>
+<span class="badge badge-pill badge-default">Sanity</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -699,28 +721,28 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:27 pm</td>
+        <td>2:43:30 pm</td>
         <td>
-          User selects a fruit from dropdown
+          User reads value from disabled input field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:30 pm</td>
+        <td>2:43:31 pm</td>
         <td>
-          System should display selected fruit confirmation
+          System should return value from disabled field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 pm</td>
+        <td>2:43:31 pm</td>
         <td>
-          Fruit selection verified successfully
+          Value fetched from disabled field successfully
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 pm</td>
+        <td>2:43:31 pm</td>
         <td>
           Test Passed
         </td>
@@ -732,12 +754,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="11"
           author="Bhargav"
-          tag="Regression Smoke"
+          tag="Regression"
           device="">
           <div class="test-detail">
-            <p class="name">shouldHandleConfirmAlert</p>
+            <p class="name">dataDrivenTestDevelopment</p>
             <p class="text-sm">
-              <span>5:49:28 pm</span> / <span>00:00:00:466</span>
+              <span>2:43:32 pm</span> / <span>00:00:07:611</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -745,18 +767,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">shouldHandleConfirmAlert</h5>
-<span class='badge badge-success'>12.31.2025 5:49:28 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:28 pm</span>
-<span class='badge badge-default'>00:00:00:466</span>
+<h5 class="test-status text-pass">dataDrivenTestDevelopment</h5>
+<span class='badge badge-success'>01.02.2026 2:43:32 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:39 pm</span>
+<span class='badge badge-default'>00:00:07:611</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
-<span class="badge badge-pill badge-default">Regression</span>
-<span class="badge badge-pill badge-default">Smoke</span></div>
+<span class="badge badge-pill badge-default">Regression</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -764,28 +785,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:28 pm</td>
+        <td>2:43:32 pm</td>
         <td>
-          User triggers confirmation alert
+          In this test data used from excel file
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:28 pm</td>
+        <td>2:43:32 pm</td>
         <td>
-          System should display correct confirmation alert message
+          Data used for test :Bhargav, Gohil
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:35 pm</td>
+        <td>
+          User filled form with valid details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:39 pm</td>
+        <td>
+          User submitted the form
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:28 pm</td>
-        <td>
-          Confirmation alert handled successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:28 pm</td>
+        <td>2:43:39 pm</td>
         <td>
           Test Passed
         </td>
@@ -800,9 +828,9 @@
           tag="Sanity Regression"
           device="">
           <div class="test-detail">
-            <p class="name">shouldSelectLanguageByValue</p>
+            <p class="name">shouldHandlePromptAlert</p>
             <p class="text-sm">
-              <span>5:49:28 pm</span> / <span>00:00:01:850</span>
+              <span>2:43:33 pm</span> / <span>00:00:00:868</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -810,10 +838,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">shouldSelectLanguageByValue</h5>
-<span class='badge badge-success'>12.31.2025 5:49:28 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:30 pm</span>
-<span class='badge badge-default'>00:00:01:850</span>
+<h5 class="test-status text-pass">shouldHandlePromptAlert</h5>
+<span class='badge badge-success'>01.02.2026 2:43:33 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:34 pm</span>
+<span class='badge badge-default'>00:00:00:868</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -829,28 +857,21 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:28 pm</td>
+        <td>2:43:33 pm</td>
         <td>
-          User selects programming language by value
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:30 pm</td>
-        <td>
-          System should display selected language confirmation
+          User triggers prompt alert and enters input
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 pm</td>
+        <td>2:43:34 pm</td>
         <td>
-          Language selected by value verified successfully
+          Prompt alert handled successfully with user input
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 pm</td>
+        <td>2:43:34 pm</td>
         <td>
           Test Passed
         </td>
@@ -865,9 +886,9 @@
           tag="Regression Smoke"
           device="">
           <div class="test-detail">
-            <p class="name">shouldPerformLongPressOnButton</p>
+            <p class="name">shouldNavigateToHomePageOnHomeButtonClick</p>
             <p class="text-sm">
-              <span>5:49:28 pm</span> / <span>00:00:03:478</span>
+              <span>2:43:33 pm</span> / <span>00:00:00:869</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -875,10 +896,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">shouldPerformLongPressOnButton</h5>
-<span class='badge badge-success'>12.31.2025 5:49:28 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:32 pm</span>
-<span class='badge badge-default'>00:00:03:478</span>
+<h5 class="test-status text-pass">shouldNavigateToHomePageOnHomeButtonClick</h5>
+<span class='badge badge-success'>01.02.2026 2:43:33 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:34 pm</span>
+<span class='badge badge-default'>00:00:00:869</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -894,28 +915,28 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:28 pm</td>
+        <td>2:43:33 pm</td>
         <td>
-          User performs long press on button
+          User clicks on Home button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:32 pm</td>
+        <td>2:43:34 pm</td>
         <td>
-          System should update text after long press
+          System should navigate user to Home page
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:32 pm</td>
+        <td>2:43:34 pm</td>
         <td>
-          Long press action verified successfully
+          User successfully navigated to Home page
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:32 pm</td>
+        <td>2:43:34 pm</td>
         <td>
           Test Passed
         </td>
@@ -927,12 +948,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="14"
           author="Bhargav"
-          tag="Sanity Regression"
+          tag="Regression Smoke"
           device="">
           <div class="test-detail">
-            <p class="name">shouldHandleModernAlertModal</p>
+            <p class="name">shouldFillDetailsInsideIframe</p>
             <p class="text-sm">
-              <span>5:49:28 pm</span> / <span>00:00:01:539</span>
+              <span>2:43:35 pm</span> / <span>00:00:00:653</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -940,18 +961,18 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">shouldHandleModernAlertModal</h5>
-<span class='badge badge-success'>12.31.2025 5:49:28 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:30 pm</span>
-<span class='badge badge-default'>00:00:01:539</span>
+<h5 class="test-status text-pass">shouldFillDetailsInsideIframe</h5>
+<span class='badge badge-success'>01.02.2026 2:43:35 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:36 pm</span>
+<span class='badge badge-default'>00:00:00:653</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
-<span class="badge badge-pill badge-default">Sanity</span>
-<span class="badge badge-pill badge-default">Regression</span></div>
+<span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -959,28 +980,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:28 pm</td>
+        <td>2:43:35 pm</td>
         <td>
-          User triggers modern alert modal
+          User switches to iframe
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:29 pm</td>
+        <td>2:43:35 pm</td>
         <td>
-          System should display correct modern alert message
+          User enters first name and last name inside iframe
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:36 pm</td>
+        <td>
+          System should display correct submitted details
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 pm</td>
+        <td>2:43:36 pm</td>
         <td>
-          Modern alert modal verified and closed successfully
+          Details inside iframe filled and verified successfully
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 pm</td>
+        <td>2:43:36 pm</td>
         <td>
           Test Passed
         </td>
@@ -990,25 +1018,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="15"
+        <li class="test-item"  status="skip" test-id="15"
           author="Bhargav"
           tag="Regression Smoke"
           device="">
           <div class="test-detail">
-            <p class="name">shouldEnterFullName</p>
+            <p class="name">testPhoneNumberPattern_DemoFailedTestCase</p>
             <p class="text-sm">
-              <span>5:49:29 pm</span> / <span>00:00:00:269</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>2:43:36 pm</span> / <span>00:00:05:679</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">shouldEnterFullName</h5>
-<span class='badge badge-success'>12.31.2025 5:49:29 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:29 pm</span>
-<span class='badge badge-default'>00:00:00:269</span>
+<h5 class="test-status text-skip">testPhoneNumberPattern_DemoFailedTestCase</h5>
+<span class='badge badge-success'>01.02.2026 2:43:36 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:41 pm</span>
+<span class='badge badge-default'>00:00:05:679</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1024,30 +1052,23 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:29 pm</td>
+        <td>2:43:41 pm</td>
         <td>
-          User enters full name into Full Name field
+          User filled form with invalid phone number details
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:29 pm</td>
+        <td>2:43:41 pm</td>
         <td>
-          System should display entered full name
+          User submitted the form
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:29 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:43:41 pm</td>
         <td>
-          Full name entered successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:29 pm</td>
-        <td>
-          Test Passed
+          Test Skipped
         </td>
       </tr>
   </tbody>
@@ -1056,287 +1077,13 @@
           </div>
         </li>
         <li class="test-item"  status="pass" test-id="16"
-          author="Bhargav"
-          tag="Sanity Regression"
-          device="">
-          <div class="test-detail">
-            <p class="name">shouldSelectAndDeselectMultipleSuperheroes</p>
-            <p class="text-sm">
-              <span>5:49:29 pm</span> / <span>00:00:06:484</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">shouldSelectAndDeselectMultipleSuperheroes</h5>
-<span class='badge badge-success'>12.31.2025 5:49:29 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:35 pm</span>
-<span class='badge badge-default'>00:00:06:484</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
-<span class="badge badge-pill badge-default">Sanity</span>
-<span class="badge badge-pill badge-default">Regression</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:29 pm</td>
-        <td>
-          User verifies superheroes dropdown supports multiple selection
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:29 pm</td>
-        <td>
-          User selects multiple superheroes
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:33 pm</td>
-        <td>
-          System should display all selected superheroes
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:33 pm</td>
-        <td>
-          User deselects all superheroes
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:35 pm</td>
-        <td>
-          Multiple selection and deselection verified successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:35 pm</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="17"
-          author="Bhargav"
-          tag="Sanity Regression"
-          device="">
-          <div class="test-detail">
-            <p class="name">shouldVerifyAllCountryOptions</p>
-            <p class="text-sm">
-              <span>5:49:29 pm</span> / <span>00:00:01:443</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">shouldVerifyAllCountryOptions</h5>
-<span class='badge badge-success'>12.31.2025 5:49:29 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:30 pm</span>
-<span class='badge badge-default'>00:00:01:443</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
-<span class="badge badge-pill badge-default">Sanity</span>
-<span class="badge badge-pill badge-default">Regression</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:29 pm</td>
-        <td>
-          User retrieves all country options from dropdown
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:30 pm</td>
-        <td>
-          System should display all expected country options
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 pm</td>
-        <td>
-          All country options verified successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 pm</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="18"
-          author="Bhargav"
-          tag="Sanity Regression"
-          device="">
-          <div class="test-detail">
-            <p class="name">shouldVerifyReadOnlyFieldValue</p>
-            <p class="text-sm">
-              <span>5:49:29 pm</span> / <span>00:00:00:182</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">shouldVerifyReadOnlyFieldValue</h5>
-<span class='badge badge-success'>12.31.2025 5:49:29 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:29 pm</span>
-<span class='badge badge-default'>00:00:00:182</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
-<span class="badge badge-pill badge-default">Sanity</span>
-<span class="badge badge-pill badge-default">Regression</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:29 pm</td>
-        <td>
-          User checks value of read-only input field
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:29 pm</td>
-        <td>
-          System should display predefined read-only value
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:29 pm</td>
-        <td>
-          Read-only field value validated successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:29 pm</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="19"
-          author="Bhargav"
-          tag="Sanity Regression"
-          device="">
-          <div class="test-detail">
-            <p class="name">shouldClearInputField</p>
-            <p class="text-sm">
-              <span>5:49:29 pm</span> / <span>00:00:00:250</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">shouldClearInputField</h5>
-<span class='badge badge-success'>12.31.2025 5:49:29 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:30 pm</span>
-<span class='badge badge-default'>00:00:00:250</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
-<span class="badge badge-pill badge-default">Sanity</span>
-<span class="badge badge-pill badge-default">Regression</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:29 pm</td>
-        <td>
-          User clears the text from input field
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:30 pm</td>
-        <td>
-          System should remove all text from input field
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 pm</td>
-        <td>
-          Input field cleared successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 pm</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="20"
           author="Jay"
           tag="Sanity Regression"
           device="">
           <div class="test-detail">
             <p class="name">shouldVerifyButtonBackgroundColor</p>
             <p class="text-sm">
-              <span>5:49:30 pm</span> / <span>00:00:00:293</span>
+              <span>2:43:36 pm</span> / <span>00:00:00:082</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1345,10 +1092,10 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">shouldVerifyButtonBackgroundColor</h5>
-<span class='badge badge-success'>12.31.2025 5:49:30 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:30 pm</span>
-<span class='badge badge-default'>00:00:00:293</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-success'>01.02.2026 2:43:36 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:36 pm</span>
+<span class='badge badge-default'>00:00:00:082</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -1363,28 +1110,288 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:30 pm</td>
+        <td>2:43:36 pm</td>
         <td>
           User checks background color of button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:30 pm</td>
+        <td>2:43:36 pm</td>
         <td>
           System should display correct background color
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 pm</td>
+        <td>2:43:36 pm</td>
         <td>
           Button background color verified successfully
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 pm</td>
+        <td>2:43:36 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author="Bhargav"
+          tag="Regression Smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">testPhoneNumberPattern</p>
+            <p class="text-sm">
+              <span>2:43:37 pm</span> / <span>00:00:05:392</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testPhoneNumberPattern</h5>
+<span class='badge badge-success'>01.02.2026 2:43:37 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:42 pm</span>
+<span class='badge badge-default'>00:00:05:392</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
+<span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:42 pm</td>
+        <td>
+          User filled form with invalid phone number details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:42 pm</td>
+        <td>
+          User submitted the form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:42 pm</td>
+        <td>
+          Phone number pattern validation verified successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:42 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author="Jay"
+          tag="Sanity Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">shouldVerifyButtonDimensions</p>
+            <p class="text-sm">
+              <span>2:43:37 pm</span> / <span>00:00:00:108</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">shouldVerifyButtonDimensions</h5>
+<span class='badge badge-success'>01.02.2026 2:43:37 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:37 pm</span>
+<span class='badge badge-default'>00:00:00:108</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Jay</span>
+<span class="badge badge-pill badge-default">Sanity</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:37 pm</td>
+        <td>
+          User checks width and height of button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:37 pm</td>
+        <td>
+          System should display correct button dimensions
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:37 pm</td>
+        <td>
+          Button dimensions verified successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:37 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author="Bhargav"
+          tag="Regression Smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">shouldHandleSimpleAlert</p>
+            <p class="text-sm">
+              <span>2:43:37 pm</span> / <span>00:00:00:556</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">shouldHandleSimpleAlert</h5>
+<span class='badge badge-success'>01.02.2026 2:43:37 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:37 pm</span>
+<span class='badge badge-default'>00:00:00:556</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
+<span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:37 pm</td>
+        <td>
+          User triggers simple alert
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:37 pm</td>
+        <td>
+          System should display correct simple alert message
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:37 pm</td>
+        <td>
+          Simple alert handled successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:37 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author="Bhargav"
+          tag="Regression Smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">shouldHandleConfirmAlert</p>
+            <p class="text-sm">
+              <span>2:43:37 pm</span> / <span>00:00:00:288</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">shouldHandleConfirmAlert</h5>
+<span class='badge badge-success'>01.02.2026 2:43:37 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:37 pm</span>
+<span class='badge badge-default'>00:00:00:288</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
+<span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:37 pm</td>
+        <td>
+          User triggers confirmation alert
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:37 pm</td>
+        <td>
+          System should display correct confirmation alert message
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:37 pm</td>
+        <td>
+          Confirmation alert handled successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:37 pm</td>
         <td>
           Test Passed
         </td>
@@ -1396,12 +1403,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="21"
           author="Bhargav"
-          tag="Sanity Regression"
+          tag="Regression Smoke"
           device="">
           <div class="test-detail">
-            <p class="name">shouldHandlePromptAlert</p>
+            <p class="name">testInvalidEmail</p>
             <p class="text-sm">
-              <span>5:49:30 pm</span> / <span>00:00:00:216</span>
+              <span>2:43:38 pm</span> / <span>00:00:05:037</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1409,11 +1416,134 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">shouldHandlePromptAlert</h5>
-<span class='badge badge-success'>12.31.2025 5:49:30 pm</span>
-<span class='badge badge-danger'>12.31.2025 5:49:30 pm</span>
-<span class='badge badge-default'>00:00:00:216</span>
+<h5 class="test-status text-pass">testInvalidEmail</h5>
+<span class='badge badge-success'>01.02.2026 2:43:38 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:43 pm</span>
+<span class='badge badge-default'>00:00:05:037</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
+<span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:43 pm</td>
+        <td>
+          User entered invalid email format in form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:43 pm</td>
+        <td>
+          User submitted the form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:43 pm</td>
+        <td>
+          Invalid email validation verified successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:43 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author="Bhargav"
+          tag="Regression Critical"
+          device="">
+          <div class="test-detail">
+            <p class="name">testFormSubmission</p>
+            <p class="text-sm">
+              <span>2:43:39 pm</span> / <span>00:00:06:619</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testFormSubmission</h5>
+<span class='badge badge-success'>01.02.2026 2:43:39 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:46 pm</span>
+<span class='badge badge-default'>00:00:06:619</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
+<span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">Critical</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:43 pm</td>
+        <td>
+          User filled form with valid details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:46 pm</td>
+        <td>
+          User submitted the form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:46 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author="Bhargav"
+          tag="Sanity Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">shouldHandleModernAlertModal</p>
+            <p class="text-sm">
+              <span>2:43:39 pm</span> / <span>00:00:00:633</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">shouldHandleModernAlertModal</h5>
+<span class='badge badge-success'>01.02.2026 2:43:39 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:40 pm</span>
+<span class='badge badge-default'>00:00:00:633</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -1428,23 +1558,653 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:49:30 pm</td>
+        <td>2:43:39 pm</td>
         <td>
-          User triggers prompt alert and enters input
+          User triggers modern alert modal
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:39 pm</td>
+        <td>
+          System should display correct modern alert message
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 pm</td>
+        <td>2:43:40 pm</td>
         <td>
-          Prompt alert handled successfully with user input
+          Modern alert modal verified and closed successfully
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 pm</td>
+        <td>2:43:40 pm</td>
         <td>
           Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author="Bhargav"
+          tag="Sanity Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">shouldVerifyAllCountryOptions</p>
+            <p class="text-sm">
+              <span>2:43:48 pm</span> / <span>00:00:04:141</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">shouldVerifyAllCountryOptions</h5>
+<span class='badge badge-success'>01.02.2026 2:43:48 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:52 pm</span>
+<span class='badge badge-default'>00:00:04:141</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
+<span class="badge badge-pill badge-default">Sanity</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:48 pm</td>
+        <td>
+          User retrieves all country options from dropdown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:52 pm</td>
+        <td>
+          System should display all expected country options
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:52 pm</td>
+        <td>
+          All country options verified successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:52 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author="Bhargav"
+          tag="Sanity Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">shouldVerifyReadOnlyFieldValue</p>
+            <p class="text-sm">
+              <span>2:43:49 pm</span> / <span>00:00:00:067</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">shouldVerifyReadOnlyFieldValue</h5>
+<span class='badge badge-success'>01.02.2026 2:43:49 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:49 pm</span>
+<span class='badge badge-default'>00:00:00:067</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
+<span class="badge badge-pill badge-default">Sanity</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:49 pm</td>
+        <td>
+          User checks value of read-only input field
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:49 pm</td>
+        <td>
+          System should display predefined read-only value
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:49 pm</td>
+        <td>
+          Read-only field value validated successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:49 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author="Bhargav"
+          tag="Sanity Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">shouldSelectAndDeselectMultipleSuperheroes</p>
+            <p class="text-sm">
+              <span>2:43:49 pm</span> / <span>00:00:06:060</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">shouldSelectAndDeselectMultipleSuperheroes</h5>
+<span class='badge badge-success'>01.02.2026 2:43:49 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:55 pm</span>
+<span class='badge badge-default'>00:00:06:060</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
+<span class="badge badge-pill badge-default">Sanity</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:49 pm</td>
+        <td>
+          User verifies superheroes dropdown supports multiple selection
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:49 pm</td>
+        <td>
+          User selects multiple superheroes
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:53 pm</td>
+        <td>
+          System should display all selected superheroes
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:53 pm</td>
+        <td>
+          User deselects all superheroes
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:55 pm</td>
+        <td>
+          Multiple selection and deselection verified successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:55 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author="Bhargav"
+          tag="Regression Smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">shouldSelectFruitFromDropdown</p>
+            <p class="text-sm">
+              <span>2:43:49 pm</span> / <span>00:00:01:767</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">shouldSelectFruitFromDropdown</h5>
+<span class='badge badge-success'>01.02.2026 2:43:49 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:51 pm</span>
+<span class='badge badge-default'>00:00:01:767</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
+<span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:49 pm</td>
+        <td>
+          User selects a fruit from dropdown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:51 pm</td>
+        <td>
+          System should display selected fruit confirmation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:51 pm</td>
+        <td>
+          Fruit selection verified successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:51 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author="Bhargav"
+          tag="Sanity Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">shouldSelectLanguageByIndex</p>
+            <p class="text-sm">
+              <span>2:43:51 pm</span> / <span>00:00:01:090</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">shouldSelectLanguageByIndex</h5>
+<span class='badge badge-success'>01.02.2026 2:43:51 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:52 pm</span>
+<span class='badge badge-default'>00:00:01:090</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
+<span class="badge badge-pill badge-default">Sanity</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:51 pm</td>
+        <td>
+          User selects programming language by index
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:52 pm</td>
+        <td>
+          System should display selected language confirmation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:52 pm</td>
+        <td>
+          Language selected by index verified successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:52 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author="Bhargav"
+          tag="Sanity Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">shouldSelectLanguageByValue</p>
+            <p class="text-sm">
+              <span>2:43:52 pm</span> / <span>00:00:00:221</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">shouldSelectLanguageByValue</h5>
+<span class='badge badge-success'>01.02.2026 2:43:52 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:43:53 pm</span>
+<span class='badge badge-default'>00:00:00:221</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
+<span class="badge badge-pill badge-default">Sanity</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:52 pm</td>
+        <td>
+          User selects programming language by value
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:53 pm</td>
+        <td>
+          System should display selected language confirmation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:53 pm</td>
+        <td>
+          Language selected by value verified successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:53 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author="Bhargav"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">dataDrivenTestDevelopment</p>
+            <p class="text-sm">
+              <span>2:43:54 pm</span> / <span>00:00:06:751</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">dataDrivenTestDevelopment</h5>
+<span class='badge badge-success'>01.02.2026 2:43:54 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:44:01 pm</span>
+<span class='badge badge-default'>00:00:06:751</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:54 pm</td>
+        <td>
+          In this test data used from excel file
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:58 pm</td>
+        <td>
+          Data used for test :Jay, Panchal
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:59 pm</td>
+        <td>
+          User filled form with valid details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:44:01 pm</td>
+        <td>
+          User submitted the form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:44:01 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author="Bhargav"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">dataDrivenTestDevelopment_JsonData</p>
+            <p class="text-sm">
+              <span>2:43:58 pm</span> / <span>00:00:03:591</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">dataDrivenTestDevelopment_JsonData</h5>
+<span class='badge badge-success'>01.02.2026 2:43:58 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:44:01 pm</span>
+<span class='badge badge-default'>00:00:03:591</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:58 pm</td>
+        <td>
+          User fills form using JSON test data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:59 pm</td>
+        <td>
+          User submits the form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:44:01 pm</td>
+        <td>
+          Form submitted successfully using JSON data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:44:01 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="32"
+          author="Bhargav"
+          tag="Regression Smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">testPhoneNumberPattern_DemoFailedTestCase</p>
+            <p class="text-sm">
+              <span>2:43:58 pm</span> / <span>00:00:01:739</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testPhoneNumberPattern_DemoFailedTestCase</h5>
+<span class='badge badge-success'>01.02.2026 2:43:58 pm</span>
+<span class='badge badge-danger'>01.02.2026 2:44:00 pm</span>
+<span class='badge badge-default'>00:00:01:739</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Bhargav</span>
+<span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Bhargav-G-Phi\Desktop\MyQa\Selenium-TestNG-POM-Framework/reports/testPhoneNumberPattern_DemoFailedTestCase.png' src="C:\Users\Bhargav-G-Phi\Desktop\MyQa\Selenium-TestNG-POM-Framework/reports/testPhoneNumberPattern_DemoFailedTestCase.png">
+    <div class="title">testPhoneNumberPattern_DemoFailedTestCase</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:59 pm</td>
+        <td>
+          User filled form with invalid phone number details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:44:00 pm</td>
+        <td>
+          User submitted the form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:44:00 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [Please match the format requested.Test] but found [Please match the format requested.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.automation.selenium.tests.form.FormPageTest.testPhoneNumberPattern_DemoFailedTestCase(FormPageTest.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -1461,26 +2221,79 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>7</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:43:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='32' id='32'>testPhoneNumberPattern_DemoFailedTestCase</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>10</span>
+<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>1</span>
 </span>
 <p class="name">Smoke</p>
-<p class="duration text-sm">7 tests</p>
+<p class="duration text-sm">12 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>Smoke</h4>
-<span status="pass" class='badge log pass-bg'>7 passed</span>
+<span status="pass" class='badge log pass-bg'>10 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>1 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1493,51 +2306,86 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:22 pm</td>
+<td>14:43:21 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>shouldHandleSimpleAlert</a>
+<a href="#" class="linked" test-id='3' id='3'>shouldPerformLongPressOnButton</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:27 pm</td>
+<td>14:43:25 pm</td>
 <td>
-<a href="#" class="linked" test-id='6' id='6'>shouldNavigateToHomePageOnHomeButtonClick</a>
+<a href="#" class="linked" test-id='4' id='4'>shouldEnterFullName</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:27 pm</td>
+<td>14:43:26 pm</td>
 <td>
-<a href="#" class="linked" test-id='8' id='8'>shouldAppendTextToInputField</a>
+<a href="#" class="linked" test-id='6' id='6'>shouldAppendTextToInputField</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:27 pm</td>
+<td>14:43:33 pm</td>
 <td>
-<a href="#" class="linked" test-id='10' id='10'>shouldSelectFruitFromDropdown</a>
+<a href="#" class="linked" test-id='13' id='13'>shouldNavigateToHomePageOnHomeButtonClick</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:28 pm</td>
+<td>14:43:35 pm</td>
 <td>
-<a href="#" class="linked" test-id='11' id='11'>shouldHandleConfirmAlert</a>
+<a href="#" class="linked" test-id='14' id='14'>shouldFillDetailsInsideIframe</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:43:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>testPhoneNumberPattern_DemoFailedTestCase</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:28 pm</td>
+<td>14:43:37 pm</td>
 <td>
-<a href="#" class="linked" test-id='13' id='13'>shouldPerformLongPressOnButton</a>
+<a href="#" class="linked" test-id='17' id='17'>testPhoneNumberPattern</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:29 pm</td>
+<td>14:43:37 pm</td>
 <td>
-<a href="#" class="linked" test-id='15' id='15'>shouldEnterFullName</a>
+<a href="#" class="linked" test-id='19' id='19'>shouldHandleSimpleAlert</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>shouldHandleConfirmAlert</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>testInvalidEmail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>shouldSelectFruitFromDropdown</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:43:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='32' id='32'>testPhoneNumberPattern_DemoFailedTestCase</a>
 </td>
 </tr>
 </tbody>
@@ -1547,181 +2395,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>20</span>
-</span>
-<p class="name">Regression</p>
-<p class="duration text-sm">20 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>Regression</h4>
-<span status="pass" class='badge log pass-bg'>20 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:22 pm</td>
-<td>
-<a href="#" class="linked" test-id='2' id='2'>shouldHandleSimpleAlert</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:25 pm</td>
-<td>
-<a href="#" class="linked" test-id='3' id='3'>shouldSelectLanguageByIndex</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:26 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'>shouldGetTextFromDisabledField</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:26 pm</td>
-<td>
-<a href="#" class="linked" test-id='5' id='5'>shouldVerifyNonEditableField</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:27 pm</td>
-<td>
-<a href="#" class="linked" test-id='6' id='6'>shouldNavigateToHomePageOnHomeButtonClick</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:27 pm</td>
-<td>
-<a href="#" class="linked" test-id='7' id='7'>shouldFetchXAndYPositionOfButton</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:27 pm</td>
-<td>
-<a href="#" class="linked" test-id='8' id='8'>shouldAppendTextToInputField</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:27 pm</td>
-<td>
-<a href="#" class="linked" test-id='9' id='9'>shouldVerifyButtonDimensions</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:27 pm</td>
-<td>
-<a href="#" class="linked" test-id='10' id='10'>shouldSelectFruitFromDropdown</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:28 pm</td>
-<td>
-<a href="#" class="linked" test-id='11' id='11'>shouldHandleConfirmAlert</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:28 pm</td>
-<td>
-<a href="#" class="linked" test-id='13' id='13'>shouldPerformLongPressOnButton</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:28 pm</td>
-<td>
-<a href="#" class="linked" test-id='12' id='12'>shouldSelectLanguageByValue</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:28 pm</td>
-<td>
-<a href="#" class="linked" test-id='14' id='14'>shouldHandleModernAlertModal</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:29 pm</td>
-<td>
-<a href="#" class="linked" test-id='15' id='15'>shouldEnterFullName</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:29 pm</td>
-<td>
-<a href="#" class="linked" test-id='16' id='16'>shouldSelectAndDeselectMultipleSuperheroes</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:29 pm</td>
-<td>
-<a href="#" class="linked" test-id='17' id='17'>shouldVerifyAllCountryOptions</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:29 pm</td>
-<td>
-<a href="#" class="linked" test-id='18' id='18'>shouldVerifyReadOnlyFieldValue</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:29 pm</td>
-<td>
-<a href="#" class="linked" test-id='19' id='19'>shouldClearInputField</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:30 pm</td>
-<td>
-<a href="#" class="linked" test-id='20' id='20'>shouldVerifyButtonBackgroundColor</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:30 pm</td>
-<td>
-<a href="#" class="linked" test-id='21' id='21'>shouldHandlePromptAlert</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>13</span>
+<span class='badge log pass-bg'>15</span>
 </span>
 <p class="name">Sanity</p>
-<p class="duration text-sm">13 tests</p>
+<p class="duration text-sm">15 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>Sanity</h4>
-<span status="pass" class='badge log pass-bg'>13 passed</span>
+<span status="pass" class='badge log pass-bg'>15 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1734,93 +2416,394 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:25 pm</td>
+<td>14:43:19 pm</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>shouldSelectLanguageByIndex</a>
+<a href="#" class="linked" test-id='1' id='1'>shouldEnterEmailInsideInnerIframe</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:26 pm</td>
+<td>14:43:21 pm</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>shouldGetTextFromDisabledField</a>
+<a href="#" class="linked" test-id='2' id='2'>shouldClearInputField</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:26 pm</td>
+<td>14:43:25 pm</td>
 <td>
 <a href="#" class="linked" test-id='5' id='5'>shouldVerifyNonEditableField</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:27 pm</td>
+<td>14:43:27 pm</td>
 <td>
 <a href="#" class="linked" test-id='7' id='7'>shouldFetchXAndYPositionOfButton</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:27 pm</td>
+<td>14:43:29 pm</td>
 <td>
-<a href="#" class="linked" test-id='9' id='9'>shouldVerifyButtonDimensions</a>
+<a href="#" class="linked" test-id='8' id='8'>testEmptyFirstName</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:28 pm</td>
+<td>14:43:30 pm</td>
 <td>
-<a href="#" class="linked" test-id='12' id='12'>shouldSelectLanguageByValue</a>
+<a href="#" class="linked" test-id='10' id='10'>shouldGetTextFromDisabledField</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:28 pm</td>
+<td>14:43:33 pm</td>
 <td>
-<a href="#" class="linked" test-id='14' id='14'>shouldHandleModernAlertModal</a>
+<a href="#" class="linked" test-id='12' id='12'>shouldHandlePromptAlert</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:29 pm</td>
+<td>14:43:36 pm</td>
 <td>
-<a href="#" class="linked" test-id='16' id='16'>shouldSelectAndDeselectMultipleSuperheroes</a>
+<a href="#" class="linked" test-id='16' id='16'>shouldVerifyButtonBackgroundColor</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:29 pm</td>
+<td>14:43:37 pm</td>
 <td>
-<a href="#" class="linked" test-id='17' id='17'>shouldVerifyAllCountryOptions</a>
+<a href="#" class="linked" test-id='18' id='18'>shouldVerifyButtonDimensions</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:29 pm</td>
+<td>14:43:39 pm</td>
 <td>
-<a href="#" class="linked" test-id='18' id='18'>shouldVerifyReadOnlyFieldValue</a>
+<a href="#" class="linked" test-id='23' id='23'>shouldHandleModernAlertModal</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:29 pm</td>
+<td>14:43:48 pm</td>
 <td>
-<a href="#" class="linked" test-id='19' id='19'>shouldClearInputField</a>
+<a href="#" class="linked" test-id='24' id='24'>shouldVerifyAllCountryOptions</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:30 pm</td>
+<td>14:43:49 pm</td>
 <td>
-<a href="#" class="linked" test-id='20' id='20'>shouldVerifyButtonBackgroundColor</a>
+<a href="#" class="linked" test-id='25' id='25'>shouldVerifyReadOnlyFieldValue</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:30 pm</td>
+<td>14:43:49 pm</td>
 <td>
-<a href="#" class="linked" test-id='21' id='21'>shouldHandlePromptAlert</a>
+<a href="#" class="linked" test-id='26' id='26'>shouldSelectAndDeselectMultipleSuperheroes</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>shouldSelectLanguageByIndex</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>shouldSelectLanguageByValue</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>30</span>
+<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>1</span>
+</span>
+<p class="name">Regression</p>
+<p class="duration text-sm">32 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Regression</h4>
+<span status="pass" class='badge log pass-bg'>30 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>1 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>shouldEnterEmailInsideInnerIframe</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>shouldClearInputField</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>shouldPerformLongPressOnButton</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>shouldEnterFullName</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>shouldVerifyNonEditableField</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>shouldAppendTextToInputField</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:27 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>shouldFetchXAndYPositionOfButton</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>testEmptyFirstName</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>dataDrivenTestDevelopment_JsonData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>shouldGetTextFromDisabledField</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>dataDrivenTestDevelopment</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>shouldHandlePromptAlert</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>shouldNavigateToHomePageOnHomeButtonClick</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>shouldFillDetailsInsideIframe</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:43:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>testPhoneNumberPattern_DemoFailedTestCase</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>shouldVerifyButtonBackgroundColor</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>testPhoneNumberPattern</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>shouldVerifyButtonDimensions</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>shouldHandleSimpleAlert</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>shouldHandleConfirmAlert</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>testInvalidEmail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>testFormSubmission</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>shouldHandleModernAlertModal</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>shouldVerifyAllCountryOptions</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>shouldVerifyReadOnlyFieldValue</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='26' id='26'>shouldSelectAndDeselectMultipleSuperheroes</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>shouldSelectFruitFromDropdown</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>shouldSelectLanguageByIndex</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>shouldSelectLanguageByValue</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='30' id='30'>dataDrivenTestDevelopment</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='31' id='31'>dataDrivenTestDevelopment_JsonData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:43:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='32' id='32'>testPhoneNumberPattern_DemoFailedTestCase</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Critical</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Critical</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>testFormSubmission</a>
 </td>
 </tr>
 </tbody>
@@ -1867,37 +2850,37 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:27 pm</td>
+<td>14:43:21 pm</td>
 <td>
-<a href="#" class="linked" test-id='6' id='6'>shouldNavigateToHomePageOnHomeButtonClick</a>
+<a href="#" class="linked" test-id='3' id='3'>shouldPerformLongPressOnButton</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:27 pm</td>
+<td>14:43:27 pm</td>
 <td>
 <a href="#" class="linked" test-id='7' id='7'>shouldFetchXAndYPositionOfButton</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:27 pm</td>
+<td>14:43:33 pm</td>
 <td>
-<a href="#" class="linked" test-id='9' id='9'>shouldVerifyButtonDimensions</a>
+<a href="#" class="linked" test-id='13' id='13'>shouldNavigateToHomePageOnHomeButtonClick</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:28 pm</td>
+<td>14:43:36 pm</td>
 <td>
-<a href="#" class="linked" test-id='13' id='13'>shouldPerformLongPressOnButton</a>
+<a href="#" class="linked" test-id='16' id='16'>shouldVerifyButtonBackgroundColor</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:30 pm</td>
+<td>14:43:37 pm</td>
 <td>
-<a href="#" class="linked" test-id='20' id='20'>shouldVerifyButtonBackgroundColor</a>
+<a href="#" class="linked" test-id='18' id='18'>shouldVerifyButtonDimensions</a>
 </td>
 </tr>
 </tbody>
@@ -1907,15 +2890,19 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>15</span>
+<span class='badge log pass-bg'>25</span>
+<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>1</span>
 </span>
 <p class="name">Bhargav</p>
-<p class="duration text-sm">15 tests</p>
+<p class="duration text-sm">27 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>Bhargav</h4>
-<span status="pass" class='badge log pass-bg'>15 passed</span>
+<span status="pass" class='badge log pass-bg'>25 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>1 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1928,107 +2915,191 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:22 pm</td>
+<td>14:43:19 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>shouldHandleSimpleAlert</a>
+<a href="#" class="linked" test-id='1' id='1'>shouldEnterEmailInsideInnerIframe</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:25 pm</td>
+<td>14:43:21 pm</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>shouldSelectLanguageByIndex</a>
+<a href="#" class="linked" test-id='2' id='2'>shouldClearInputField</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:26 pm</td>
+<td>14:43:25 pm</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>shouldGetTextFromDisabledField</a>
+<a href="#" class="linked" test-id='4' id='4'>shouldEnterFullName</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:26 pm</td>
+<td>14:43:25 pm</td>
 <td>
 <a href="#" class="linked" test-id='5' id='5'>shouldVerifyNonEditableField</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:27 pm</td>
+<td>14:43:26 pm</td>
 <td>
-<a href="#" class="linked" test-id='8' id='8'>shouldAppendTextToInputField</a>
+<a href="#" class="linked" test-id='6' id='6'>shouldAppendTextToInputField</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:27 pm</td>
+<td>14:43:29 pm</td>
 <td>
-<a href="#" class="linked" test-id='10' id='10'>shouldSelectFruitFromDropdown</a>
+<a href="#" class="linked" test-id='8' id='8'>testEmptyFirstName</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:28 pm</td>
+<td>14:43:29 pm</td>
 <td>
-<a href="#" class="linked" test-id='11' id='11'>shouldHandleConfirmAlert</a>
+<a href="#" class="linked" test-id='9' id='9'>dataDrivenTestDevelopment_JsonData</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:28 pm</td>
+<td>14:43:30 pm</td>
 <td>
-<a href="#" class="linked" test-id='12' id='12'>shouldSelectLanguageByValue</a>
+<a href="#" class="linked" test-id='10' id='10'>shouldGetTextFromDisabledField</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:28 pm</td>
+<td>14:43:32 pm</td>
 <td>
-<a href="#" class="linked" test-id='14' id='14'>shouldHandleModernAlertModal</a>
+<a href="#" class="linked" test-id='11' id='11'>dataDrivenTestDevelopment</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:29 pm</td>
+<td>14:43:33 pm</td>
 <td>
-<a href="#" class="linked" test-id='15' id='15'>shouldEnterFullName</a>
+<a href="#" class="linked" test-id='12' id='12'>shouldHandlePromptAlert</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:29 pm</td>
+<td>14:43:35 pm</td>
 <td>
-<a href="#" class="linked" test-id='16' id='16'>shouldSelectAndDeselectMultipleSuperheroes</a>
+<a href="#" class="linked" test-id='14' id='14'>shouldFillDetailsInsideIframe</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:43:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>testPhoneNumberPattern_DemoFailedTestCase</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:29 pm</td>
+<td>14:43:37 pm</td>
 <td>
-<a href="#" class="linked" test-id='17' id='17'>shouldVerifyAllCountryOptions</a>
+<a href="#" class="linked" test-id='17' id='17'>testPhoneNumberPattern</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:29 pm</td>
+<td>14:43:37 pm</td>
 <td>
-<a href="#" class="linked" test-id='18' id='18'>shouldVerifyReadOnlyFieldValue</a>
+<a href="#" class="linked" test-id='19' id='19'>shouldHandleSimpleAlert</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:29 pm</td>
+<td>14:43:37 pm</td>
 <td>
-<a href="#" class="linked" test-id='19' id='19'>shouldClearInputField</a>
+<a href="#" class="linked" test-id='20' id='20'>shouldHandleConfirmAlert</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:49:30 pm</td>
+<td>14:43:38 pm</td>
 <td>
-<a href="#" class="linked" test-id='21' id='21'>shouldHandlePromptAlert</a>
+<a href="#" class="linked" test-id='21' id='21'>testInvalidEmail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>testFormSubmission</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>shouldHandleModernAlertModal</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>shouldVerifyAllCountryOptions</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>shouldVerifyReadOnlyFieldValue</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='26' id='26'>shouldSelectAndDeselectMultipleSuperheroes</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>shouldSelectFruitFromDropdown</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>shouldSelectLanguageByIndex</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>shouldSelectLanguageByValue</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='30' id='30'>dataDrivenTestDevelopment</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='31' id='31'>dataDrivenTestDevelopment_JsonData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:43:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='32' id='32'>testPhoneNumberPattern_DemoFailedTestCase</a>
 </td>
 </tr>
 </tbody>
@@ -2048,19 +3119,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 31, 2025 05:49:04 pm</h3>
+<h3>Jan 2, 2026 02:43:11 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 31, 2025 05:49:37 pm</h3>
+<h3>Jan 2, 2026 02:44:02 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>20</h3>
+<h3>30</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -2082,13 +3153,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='95%'>
-<b>20</b> tests passed
+<div><small data-tooltip='93%'>
+<b>30</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='4%'><b>1</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='3%'><b>1</b> tests failed,
+<b>1</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -2105,10 +3176,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='49%'><b>41</b> events passed</small></div>
+<div><small data-tooltip='44%'><b>57</b> events passed</small></div>
 <div>
-<small data-tooltip='1%'><b>1</b> events failed,
-<b data-tooltip='%'>41</b> others
+<small data-tooltip='0%'><b>1</b> events failed,
+<b data-tooltip='%'>71</b> others
 </small>
 </div>
 </div>
@@ -2124,7 +3195,7 @@
 </div></div>
 <script>
 var timeline = {
-"exampleTestCaseFirst":0.02,"shouldHandleSimpleAlert":7.331,"shouldSelectLanguageByIndex":2.841,"shouldGetTextFromDisabledField":0.185,"shouldVerifyNonEditableField":0.145,"shouldNavigateToHomePageOnHomeButtonClick":3.124,"shouldFetchXAndYPositionOfButton":0.077,"shouldAppendTextToInputField":0.417,"shouldVerifyButtonDimensions":0.118,"shouldSelectFruitFromDropdown":2.552,"shouldHandleConfirmAlert":0.466,"shouldSelectLanguageByValue":1.85,"shouldPerformLongPressOnButton":3.478,"shouldHandleModernAlertModal":1.539,"shouldEnterFullName":0.269,"shouldSelectAndDeselectMultipleSuperheroes":6.484,"shouldVerifyAllCountryOptions":1.443,"shouldVerifyReadOnlyFieldValue":0.182,"shouldClearInputField":0.25,"shouldVerifyButtonBackgroundColor":0.293,"shouldHandlePromptAlert":0.216
+"shouldEnterEmailInsideInnerIframe":6.972,"shouldClearInputField":0.46,"shouldPerformLongPressOnButton":3.545,"shouldEnterFullName":0.377,"shouldVerifyNonEditableField":6.151,"shouldAppendTextToInputField":0.362,"shouldFetchXAndYPositionOfButton":0.079,"testEmptyFirstName":5.668,"dataDrivenTestDevelopment_JsonData":11.774,"shouldGetTextFromDisabledField":0.649,"dataDrivenTestDevelopment":7.611,"shouldHandlePromptAlert":0.868,"shouldNavigateToHomePageOnHomeButtonClick":0.869,"shouldFillDetailsInsideIframe":0.653,"testPhoneNumberPattern_DemoFailedTestCase":5.679,"shouldVerifyButtonBackgroundColor":0.082,"testPhoneNumberPattern":5.392,"shouldVerifyButtonDimensions":0.108,"shouldHandleSimpleAlert":0.556,"shouldHandleConfirmAlert":0.288,"testInvalidEmail":5.037,"testFormSubmission":6.619,"shouldHandleModernAlertModal":0.633,"shouldVerifyAllCountryOptions":4.141,"shouldVerifyReadOnlyFieldValue":0.067,"shouldSelectAndDeselectMultipleSuperheroes":6.06,"shouldSelectFruitFromDropdown":1.767,"shouldSelectLanguageByIndex":1.09,"shouldSelectLanguageByValue":0.221,"dataDrivenTestDevelopment":6.751,"dataDrivenTestDevelopment_JsonData":3.591,"testPhoneNumberPattern_DemoFailedTestCase":1.739
 };
 </script>
 <div class="row">
@@ -2144,11 +3215,11 @@ var timeline = {
 </tr>
 <tr>
 <td>Bhargav</td>
-<td>15</td>
+<td>25</td>
+<td>1</td>
+<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>92.593%</td>
 </tr>
 </tbody>
 </table></div>
@@ -2161,7 +3232,15 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>Smoke</td>
-<td>7</td>
+<td>10</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>83.333%</td>
+</tr>
+<tr>
+<td>Sanity</td>
+<td>15</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -2169,15 +3248,15 @@ var timeline = {
 </tr>
 <tr>
 <td>Regression</td>
-<td>20</td>
+<td>30</td>
+<td>1</td>
+<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>93.75%</td>
 </tr>
 <tr>
-<td>Sanity</td>
-<td>13</td>
+<td>Critical</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -2234,10 +3313,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 20,
+passParent: 30,
 failParent: 1,
 warningParent: 0,
-skipParent: 0,
+skipParent: 1,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -2251,11 +3330,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 41,
+passEvents: 57,
 failEvents: 1,
 warningEvents: 0,
-skipEvents: 0,
-infoEvents: 41
+skipEvents: 1,
+infoEvents: 70
 };
 </script>        </div>
       </div>

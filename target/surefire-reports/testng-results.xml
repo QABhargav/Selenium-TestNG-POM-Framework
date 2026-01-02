@@ -1,395 +1,691 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="21" passed="21" failed="0" skipped="0">
+<testng-results retried="1" ignored="1" total="33" passed="30" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-31T17:49:04 IST" name="Suite" finished-at="2025-12-31T17:49:37 IST" duration-ms="32499">
+  <suite started-at="2026-01-02T14:43:12 IST" name="Suite" finished-at="2026-01-02T14:44:02 IST" duration-ms="50489">
     <groups>
       <group name="Sanity">
-        <method signature="AlertPageTest.shouldHandleModernAlertModal()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" name="shouldHandleModernAlertModal" class="com.automation.selenium.tests.alert.AlertPageTest"/>
-        <method signature="AlertPageTest.shouldHandlePromptAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" name="shouldHandlePromptAlert" class="com.automation.selenium.tests.alert.AlertPageTest"/>
-        <method signature="ButtonPageTest.shouldFetchXAndYPositionOfButton()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" name="shouldFetchXAndYPositionOfButton" class="com.automation.selenium.tests.button.ButtonPageTest"/>
-        <method signature="ButtonPageTest.shouldVerifyButtonBackgroundColor()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" name="shouldVerifyButtonBackgroundColor" class="com.automation.selenium.tests.button.ButtonPageTest"/>
-        <method signature="ButtonPageTest.shouldVerifyButtonDimensions()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" name="shouldVerifyButtonDimensions" class="com.automation.selenium.tests.button.ButtonPageTest"/>
-        <method signature="InputPageTest.shouldClearInputField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" name="shouldClearInputField" class="com.automation.selenium.tests.input.InputPageTest"/>
-        <method signature="InputPageTest.shouldGetTextFromDisabledField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" name="shouldGetTextFromDisabledField" class="com.automation.selenium.tests.input.InputPageTest"/>
-        <method signature="InputPageTest.shouldVerifyNonEditableField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" name="shouldVerifyNonEditableField" class="com.automation.selenium.tests.input.InputPageTest"/>
-        <method signature="InputPageTest.shouldVerifyReadOnlyFieldValue()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" name="shouldVerifyReadOnlyFieldValue" class="com.automation.selenium.tests.input.InputPageTest"/>
-        <method signature="SelectPageTest.shouldSelectAndDeselectMultipleSuperheroes()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" name="shouldSelectAndDeselectMultipleSuperheroes" class="com.automation.selenium.tests.select.SelectPageTest"/>
-        <method signature="SelectPageTest.shouldSelectLanguageByIndex()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" name="shouldSelectLanguageByIndex" class="com.automation.selenium.tests.select.SelectPageTest"/>
-        <method signature="SelectPageTest.shouldSelectLanguageByValue()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" name="shouldSelectLanguageByValue" class="com.automation.selenium.tests.select.SelectPageTest"/>
-        <method signature="SelectPageTest.shouldVerifyAllCountryOptions()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" name="shouldVerifyAllCountryOptions" class="com.automation.selenium.tests.select.SelectPageTest"/>
+        <method signature="AlertPageTest.shouldHandleModernAlertModal()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" name="shouldHandleModernAlertModal" class="com.automation.selenium.tests.alert.AlertPageTest"/>
+        <method signature="AlertPageTest.shouldHandlePromptAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" name="shouldHandlePromptAlert" class="com.automation.selenium.tests.alert.AlertPageTest"/>
+        <method signature="ButtonPageTest.shouldFetchXAndYPositionOfButton()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" name="shouldFetchXAndYPositionOfButton" class="com.automation.selenium.tests.button.ButtonPageTest"/>
+        <method signature="ButtonPageTest.shouldVerifyButtonBackgroundColor()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" name="shouldVerifyButtonBackgroundColor" class="com.automation.selenium.tests.button.ButtonPageTest"/>
+        <method signature="ButtonPageTest.shouldVerifyButtonDimensions()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" name="shouldVerifyButtonDimensions" class="com.automation.selenium.tests.button.ButtonPageTest"/>
+        <method signature="FormPageTest.testEmptyFirstName()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" name="testEmptyFirstName" class="com.automation.selenium.tests.form.FormPageTest"/>
+        <method signature="FramePageTest.shouldEnterEmailInsideInnerIframe()[pri:0, instance:com.automation.selenium.tests.frame.FramePageTest@16ce702d]" name="shouldEnterEmailInsideInnerIframe" class="com.automation.selenium.tests.frame.FramePageTest"/>
+        <method signature="InputPageTest.shouldClearInputField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" name="shouldClearInputField" class="com.automation.selenium.tests.input.InputPageTest"/>
+        <method signature="InputPageTest.shouldGetTextFromDisabledField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" name="shouldGetTextFromDisabledField" class="com.automation.selenium.tests.input.InputPageTest"/>
+        <method signature="InputPageTest.shouldVerifyNonEditableField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" name="shouldVerifyNonEditableField" class="com.automation.selenium.tests.input.InputPageTest"/>
+        <method signature="InputPageTest.shouldVerifyReadOnlyFieldValue()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" name="shouldVerifyReadOnlyFieldValue" class="com.automation.selenium.tests.input.InputPageTest"/>
+        <method signature="SelectPageTest.shouldSelectAndDeselectMultipleSuperheroes()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" name="shouldSelectAndDeselectMultipleSuperheroes" class="com.automation.selenium.tests.select.SelectPageTest"/>
+        <method signature="SelectPageTest.shouldSelectLanguageByIndex()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" name="shouldSelectLanguageByIndex" class="com.automation.selenium.tests.select.SelectPageTest"/>
+        <method signature="SelectPageTest.shouldSelectLanguageByValue()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" name="shouldSelectLanguageByValue" class="com.automation.selenium.tests.select.SelectPageTest"/>
+        <method signature="SelectPageTest.shouldVerifyAllCountryOptions()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" name="shouldVerifyAllCountryOptions" class="com.automation.selenium.tests.select.SelectPageTest"/>
       </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="AlertPageTest.shouldHandleConfirmAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" name="shouldHandleConfirmAlert" class="com.automation.selenium.tests.alert.AlertPageTest"/>
-        <method signature="AlertPageTest.shouldHandleModernAlertModal()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" name="shouldHandleModernAlertModal" class="com.automation.selenium.tests.alert.AlertPageTest"/>
-        <method signature="AlertPageTest.shouldHandlePromptAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" name="shouldHandlePromptAlert" class="com.automation.selenium.tests.alert.AlertPageTest"/>
-        <method signature="AlertPageTest.shouldHandleSimpleAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" name="shouldHandleSimpleAlert" class="com.automation.selenium.tests.alert.AlertPageTest"/>
-        <method signature="ButtonPageTest.shouldFetchXAndYPositionOfButton()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" name="shouldFetchXAndYPositionOfButton" class="com.automation.selenium.tests.button.ButtonPageTest"/>
-        <method signature="ButtonPageTest.shouldNavigateToHomePageOnHomeButtonClick()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" name="shouldNavigateToHomePageOnHomeButtonClick" class="com.automation.selenium.tests.button.ButtonPageTest"/>
-        <method signature="ButtonPageTest.shouldPerformLongPressOnButton()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" name="shouldPerformLongPressOnButton" class="com.automation.selenium.tests.button.ButtonPageTest"/>
-        <method signature="ButtonPageTest.shouldVerifyButtonBackgroundColor()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" name="shouldVerifyButtonBackgroundColor" class="com.automation.selenium.tests.button.ButtonPageTest"/>
-        <method signature="ButtonPageTest.shouldVerifyButtonDimensions()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" name="shouldVerifyButtonDimensions" class="com.automation.selenium.tests.button.ButtonPageTest"/>
-        <method signature="InputPageTest.shouldAppendTextToInputField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" name="shouldAppendTextToInputField" class="com.automation.selenium.tests.input.InputPageTest"/>
-        <method signature="InputPageTest.shouldClearInputField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" name="shouldClearInputField" class="com.automation.selenium.tests.input.InputPageTest"/>
-        <method signature="InputPageTest.shouldEnterFullName()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" name="shouldEnterFullName" class="com.automation.selenium.tests.input.InputPageTest"/>
-        <method signature="InputPageTest.shouldGetTextFromDisabledField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" name="shouldGetTextFromDisabledField" class="com.automation.selenium.tests.input.InputPageTest"/>
-        <method signature="InputPageTest.shouldVerifyNonEditableField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" name="shouldVerifyNonEditableField" class="com.automation.selenium.tests.input.InputPageTest"/>
-        <method signature="InputPageTest.shouldVerifyReadOnlyFieldValue()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" name="shouldVerifyReadOnlyFieldValue" class="com.automation.selenium.tests.input.InputPageTest"/>
-        <method signature="SelectPageTest.shouldSelectAndDeselectMultipleSuperheroes()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" name="shouldSelectAndDeselectMultipleSuperheroes" class="com.automation.selenium.tests.select.SelectPageTest"/>
-        <method signature="SelectPageTest.shouldSelectFruitFromDropdown()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" name="shouldSelectFruitFromDropdown" class="com.automation.selenium.tests.select.SelectPageTest"/>
-        <method signature="SelectPageTest.shouldSelectLanguageByIndex()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" name="shouldSelectLanguageByIndex" class="com.automation.selenium.tests.select.SelectPageTest"/>
-        <method signature="SelectPageTest.shouldSelectLanguageByValue()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" name="shouldSelectLanguageByValue" class="com.automation.selenium.tests.select.SelectPageTest"/>
-        <method signature="SelectPageTest.shouldVerifyAllCountryOptions()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" name="shouldVerifyAllCountryOptions" class="com.automation.selenium.tests.select.SelectPageTest"/>
+        <method signature="AlertPageTest.shouldHandleConfirmAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" name="shouldHandleConfirmAlert" class="com.automation.selenium.tests.alert.AlertPageTest"/>
+        <method signature="AlertPageTest.shouldHandleModernAlertModal()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" name="shouldHandleModernAlertModal" class="com.automation.selenium.tests.alert.AlertPageTest"/>
+        <method signature="AlertPageTest.shouldHandlePromptAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" name="shouldHandlePromptAlert" class="com.automation.selenium.tests.alert.AlertPageTest"/>
+        <method signature="AlertPageTest.shouldHandleSimpleAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" name="shouldHandleSimpleAlert" class="com.automation.selenium.tests.alert.AlertPageTest"/>
+        <method signature="ButtonPageTest.shouldFetchXAndYPositionOfButton()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" name="shouldFetchXAndYPositionOfButton" class="com.automation.selenium.tests.button.ButtonPageTest"/>
+        <method signature="ButtonPageTest.shouldNavigateToHomePageOnHomeButtonClick()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" name="shouldNavigateToHomePageOnHomeButtonClick" class="com.automation.selenium.tests.button.ButtonPageTest"/>
+        <method signature="ButtonPageTest.shouldPerformLongPressOnButton()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" name="shouldPerformLongPressOnButton" class="com.automation.selenium.tests.button.ButtonPageTest"/>
+        <method signature="ButtonPageTest.shouldVerifyButtonBackgroundColor()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" name="shouldVerifyButtonBackgroundColor" class="com.automation.selenium.tests.button.ButtonPageTest"/>
+        <method signature="ButtonPageTest.shouldVerifyButtonDimensions()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" name="shouldVerifyButtonDimensions" class="com.automation.selenium.tests.button.ButtonPageTest"/>
+        <method signature="FormPageTest.dataDrivenTestDevelopment(java.lang.String,java.lang.String)[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" name="dataDrivenTestDevelopment" class="com.automation.selenium.tests.form.FormPageTest"/>
+        <method signature="FormPageTest.dataDrivenTestDevelopment_JsonData(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" name="dataDrivenTestDevelopment_JsonData" class="com.automation.selenium.tests.form.FormPageTest"/>
+        <method signature="FormPageTest.testEmptyFirstName()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" name="testEmptyFirstName" class="com.automation.selenium.tests.form.FormPageTest"/>
+        <method signature="FormPageTest.testFormSubmission()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" name="testFormSubmission" class="com.automation.selenium.tests.form.FormPageTest"/>
+        <method signature="FormPageTest.testInvalidEmail()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" name="testInvalidEmail" class="com.automation.selenium.tests.form.FormPageTest"/>
+        <method signature="FormPageTest.testPhoneNumberPattern()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" name="testPhoneNumberPattern" class="com.automation.selenium.tests.form.FormPageTest"/>
+        <method signature="FormPageTest.testPhoneNumberPattern_DemoFailedTestCase()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" name="testPhoneNumberPattern_DemoFailedTestCase" class="com.automation.selenium.tests.form.FormPageTest"/>
+        <method signature="FramePageTest.shouldEnterEmailInsideInnerIframe()[pri:0, instance:com.automation.selenium.tests.frame.FramePageTest@16ce702d]" name="shouldEnterEmailInsideInnerIframe" class="com.automation.selenium.tests.frame.FramePageTest"/>
+        <method signature="FramePageTest.shouldFillDetailsInsideIframe()[pri:0, instance:com.automation.selenium.tests.frame.FramePageTest@16ce702d]" name="shouldFillDetailsInsideIframe" class="com.automation.selenium.tests.frame.FramePageTest"/>
+        <method signature="InputPageTest.shouldAppendTextToInputField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" name="shouldAppendTextToInputField" class="com.automation.selenium.tests.input.InputPageTest"/>
+        <method signature="InputPageTest.shouldClearInputField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" name="shouldClearInputField" class="com.automation.selenium.tests.input.InputPageTest"/>
+        <method signature="InputPageTest.shouldEnterFullName()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" name="shouldEnterFullName" class="com.automation.selenium.tests.input.InputPageTest"/>
+        <method signature="InputPageTest.shouldGetTextFromDisabledField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" name="shouldGetTextFromDisabledField" class="com.automation.selenium.tests.input.InputPageTest"/>
+        <method signature="InputPageTest.shouldVerifyNonEditableField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" name="shouldVerifyNonEditableField" class="com.automation.selenium.tests.input.InputPageTest"/>
+        <method signature="InputPageTest.shouldVerifyReadOnlyFieldValue()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" name="shouldVerifyReadOnlyFieldValue" class="com.automation.selenium.tests.input.InputPageTest"/>
+        <method signature="SelectPageTest.shouldSelectAndDeselectMultipleSuperheroes()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" name="shouldSelectAndDeselectMultipleSuperheroes" class="com.automation.selenium.tests.select.SelectPageTest"/>
+        <method signature="SelectPageTest.shouldSelectFruitFromDropdown()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" name="shouldSelectFruitFromDropdown" class="com.automation.selenium.tests.select.SelectPageTest"/>
+        <method signature="SelectPageTest.shouldSelectLanguageByIndex()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" name="shouldSelectLanguageByIndex" class="com.automation.selenium.tests.select.SelectPageTest"/>
+        <method signature="SelectPageTest.shouldSelectLanguageByValue()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" name="shouldSelectLanguageByValue" class="com.automation.selenium.tests.select.SelectPageTest"/>
+        <method signature="SelectPageTest.shouldVerifyAllCountryOptions()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" name="shouldVerifyAllCountryOptions" class="com.automation.selenium.tests.select.SelectPageTest"/>
       </group> <!-- Regression -->
+      <group name="Critical">
+        <method signature="FormPageTest.testFormSubmission()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" name="testFormSubmission" class="com.automation.selenium.tests.form.FormPageTest"/>
+      </group> <!-- Critical -->
       <group name="Smoke">
-        <method signature="AlertPageTest.shouldHandleConfirmAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" name="shouldHandleConfirmAlert" class="com.automation.selenium.tests.alert.AlertPageTest"/>
-        <method signature="AlertPageTest.shouldHandleSimpleAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" name="shouldHandleSimpleAlert" class="com.automation.selenium.tests.alert.AlertPageTest"/>
-        <method signature="ButtonPageTest.shouldNavigateToHomePageOnHomeButtonClick()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" name="shouldNavigateToHomePageOnHomeButtonClick" class="com.automation.selenium.tests.button.ButtonPageTest"/>
-        <method signature="ButtonPageTest.shouldPerformLongPressOnButton()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" name="shouldPerformLongPressOnButton" class="com.automation.selenium.tests.button.ButtonPageTest"/>
-        <method signature="InputPageTest.shouldAppendTextToInputField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" name="shouldAppendTextToInputField" class="com.automation.selenium.tests.input.InputPageTest"/>
-        <method signature="InputPageTest.shouldEnterFullName()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" name="shouldEnterFullName" class="com.automation.selenium.tests.input.InputPageTest"/>
-        <method signature="SelectPageTest.shouldSelectFruitFromDropdown()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" name="shouldSelectFruitFromDropdown" class="com.automation.selenium.tests.select.SelectPageTest"/>
+        <method signature="AlertPageTest.shouldHandleConfirmAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" name="shouldHandleConfirmAlert" class="com.automation.selenium.tests.alert.AlertPageTest"/>
+        <method signature="AlertPageTest.shouldHandleSimpleAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" name="shouldHandleSimpleAlert" class="com.automation.selenium.tests.alert.AlertPageTest"/>
+        <method signature="ButtonPageTest.shouldNavigateToHomePageOnHomeButtonClick()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" name="shouldNavigateToHomePageOnHomeButtonClick" class="com.automation.selenium.tests.button.ButtonPageTest"/>
+        <method signature="ButtonPageTest.shouldPerformLongPressOnButton()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" name="shouldPerformLongPressOnButton" class="com.automation.selenium.tests.button.ButtonPageTest"/>
+        <method signature="FormPageTest.testInvalidEmail()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" name="testInvalidEmail" class="com.automation.selenium.tests.form.FormPageTest"/>
+        <method signature="FormPageTest.testPhoneNumberPattern()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" name="testPhoneNumberPattern" class="com.automation.selenium.tests.form.FormPageTest"/>
+        <method signature="FormPageTest.testPhoneNumberPattern_DemoFailedTestCase()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" name="testPhoneNumberPattern_DemoFailedTestCase" class="com.automation.selenium.tests.form.FormPageTest"/>
+        <method signature="FramePageTest.shouldFillDetailsInsideIframe()[pri:0, instance:com.automation.selenium.tests.frame.FramePageTest@16ce702d]" name="shouldFillDetailsInsideIframe" class="com.automation.selenium.tests.frame.FramePageTest"/>
+        <method signature="InputPageTest.shouldAppendTextToInputField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" name="shouldAppendTextToInputField" class="com.automation.selenium.tests.input.InputPageTest"/>
+        <method signature="InputPageTest.shouldEnterFullName()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" name="shouldEnterFullName" class="com.automation.selenium.tests.input.InputPageTest"/>
+        <method signature="SelectPageTest.shouldSelectFruitFromDropdown()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" name="shouldSelectFruitFromDropdown" class="com.automation.selenium.tests.select.SelectPageTest"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2025-12-31T17:49:04 IST" name="ParallelClasses" finished-at="2025-12-31T17:49:37 IST" duration-ms="32499">
+    <test started-at="2026-01-02T14:43:12 IST" name="ParallelClasses" finished-at="2026-01-02T14:44:02 IST" duration-ms="50489">
+      <class name="com.automation.selenium.tests.frame.FramePageTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.frame.FramePageTest@16ce702d]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:25 IST" duration-ms="13767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.frame.FramePageTest@16ce702d]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:18 IST" duration-ms="6019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.frame.FramePageTest@16ce702d]" started-at="2026-01-02T14:43:18 IST" name="tempSetUp" finished-at="2026-01-02T14:43:19 IST" duration-ms="871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method signature="shouldEnterEmailInsideInnerIframe()[pri:0, instance:com.automation.selenium.tests.frame.FramePageTest@16ce702d]" started-at="2026-01-02T14:43:19 IST" name="shouldEnterEmailInsideInnerIframe" finished-at="2026-01-02T14:43:26 IST" duration-ms="6978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldEnterEmailInsideInnerIframe -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.frame.FramePageTest@16ce702d]" started-at="2026-01-02T14:43:25 IST" name="tempSetUp" finished-at="2026-01-02T14:43:35 IST" duration-ms="9614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.frame.FramePageTest@16ce702d]" started-at="2026-01-02T14:43:26 IST" name="tearDown" finished-at="2026-01-02T14:43:37 IST" duration-ms="11189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="shouldFillDetailsInsideIframe()[pri:0, instance:com.automation.selenium.tests.frame.FramePageTest@16ce702d]" started-at="2026-01-02T14:43:35 IST" name="shouldFillDetailsInsideIframe" finished-at="2026-01-02T14:43:36 IST" duration-ms="652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFillDetailsInsideIframe -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.frame.FramePageTest@16ce702d]" started-at="2026-01-02T14:43:36 IST" name="tearDown" finished-at="2026-01-02T14:43:47 IST" duration-ms="11234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automation.selenium.tests.frame.FramePageTest -->
+      <class name="com.automation.selenium.tests.form.FormPageTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:31 IST" duration-ms="19458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:32 IST" duration-ms="20223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:31 IST" duration-ms="19089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:29 IST" duration-ms="17718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:21 IST" duration-ms="9184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:13 IST" name="launchApplication" finished-at="2026-01-02T14:43:29 IST" duration-ms="15612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:16 IST" name="launchApplication" finished-at="2026-01-02T14:43:23 IST" duration-ms="6736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:21 IST" name="tempSetUp" finished-at="2026-01-02T14:43:29 IST" duration-ms="7610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:23 IST" name="tempSetUp" finished-at="2026-01-02T14:43:32 IST" duration-ms="8744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method signature="testEmptyFirstName()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:29 IST" name="testEmptyFirstName" finished-at="2026-01-02T14:43:34 IST" duration-ms="5667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyFirstName -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:29 IST" name="tempSetUp" finished-at="2026-01-02T14:43:29 IST" duration-ms="651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method signature="dataDrivenTestDevelopment_JsonData(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:29 IST" name="dataDrivenTestDevelopment_JsonData" data-provider="jsonFormData" finished-at="2026-01-02T14:43:41 IST" duration-ms="11770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"firstName":"Rahul","lastName":"Gohil","email":"bhargav@mail.com","countryCode":"91","phone":"1234567890","address1":"123 Main St","address2":"Apt 4B","state":"NY","postalCode":"10001","country":"India","dob":"1990-01-01","gender":"male"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataDrivenTestDevelopment_JsonData -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:29 IST" name="tempSetUp" finished-at="2026-01-02T14:43:36 IST" duration-ms="6272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:31 IST" name="tempSetUp" finished-at="2026-01-02T14:43:37 IST" duration-ms="5803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:31 IST" name="tempSetUp" finished-at="2026-01-02T14:43:39 IST" duration-ms="7793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method signature="dataDrivenTestDevelopment(java.lang.String,java.lang.String)[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:32 IST" name="dataDrivenTestDevelopment" data-provider="inputData" finished-at="2026-01-02T14:43:39 IST" duration-ms="7611" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhargav]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gohil]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataDrivenTestDevelopment -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:32 IST" name="tempSetUp" finished-at="2026-01-02T14:43:38 IST" duration-ms="6372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:34 IST" name="tearDown" finished-at="2026-01-02T14:43:45 IST" duration-ms="11256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method retried="true" signature="testPhoneNumberPattern_DemoFailedTestCase()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:36 IST" name="testPhoneNumberPattern_DemoFailedTestCase" finished-at="2026-01-02T14:43:41 IST" duration-ms="5680" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please match the format requested.Test] but found [Please match the format requested.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please match the format requested.Test] but found [Please match the format requested.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.automation.selenium.tests.form.FormPageTest.testPhoneNumberPattern_DemoFailedTestCase(FormPageTest.java:160)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPhoneNumberPattern_DemoFailedTestCase -->
+        <test-method signature="testPhoneNumberPattern()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:37 IST" name="testPhoneNumberPattern" finished-at="2026-01-02T14:43:42 IST" duration-ms="5392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPhoneNumberPattern -->
+        <test-method signature="testInvalidEmail()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:38 IST" name="testInvalidEmail" finished-at="2026-01-02T14:43:43 IST" duration-ms="5037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidEmail -->
+        <test-method signature="testFormSubmission()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:39 IST" name="testFormSubmission" finished-at="2026-01-02T14:43:46 IST" duration-ms="6619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFormSubmission -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:39 IST" name="tearDown" finished-at="2026-01-02T14:43:50 IST" duration-ms="11247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:41 IST" name="tearDown" finished-at="2026-01-02T14:43:51 IST" duration-ms="10443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:41 IST" name="tearDown" finished-at="2026-01-02T14:43:51 IST" duration-ms="9986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:42 IST" name="tearDown" finished-at="2026-01-02T14:43:52 IST" duration-ms="9563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:43 IST" name="tearDown" finished-at="2026-01-02T14:43:52 IST" duration-ms="8675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:46 IST" name="tearDown" finished-at="2026-01-02T14:43:53 IST" duration-ms="6923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:50 IST" name="launchApplication" finished-at="2026-01-02T14:43:53 IST" duration-ms="2879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:51 IST" name="launchApplication" finished-at="2026-01-02T14:43:54 IST" duration-ms="2409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:51 IST" name="launchApplication" finished-at="2026-01-02T14:43:54 IST" duration-ms="2971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:53 IST" name="tempSetUp" finished-at="2026-01-02T14:43:54 IST" duration-ms="801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:54 IST" name="tempSetUp" finished-at="2026-01-02T14:43:58 IST" duration-ms="4452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method signature="dataDrivenTestDevelopment(java.lang.String,java.lang.String)[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:54 IST" name="dataDrivenTestDevelopment" data-provider="inputData" finished-at="2026-01-02T14:44:01 IST" duration-ms="6750" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jay]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Panchal]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataDrivenTestDevelopment -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:54 IST" name="tempSetUp" finished-at="2026-01-02T14:43:58 IST" duration-ms="3513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method signature="dataDrivenTestDevelopment_JsonData(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:58 IST" name="dataDrivenTestDevelopment_JsonData" data-provider="jsonFormData" finished-at="2026-01-02T14:44:01 IST" duration-ms="3590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"firstName":"Rajesh","lastName":"Patel","email":"john.doe@example.com","countryCode":"91","phone":"9876543210","address1":"456 Elm St","address2":"Flat 2A","state":"CA","postalCode":"90001","country":"India","dob":"1992-05-10","gender":"male"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataDrivenTestDevelopment_JsonData -->
+        <test-method signature="testPhoneNumberPattern_DemoFailedTestCase()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:43:58 IST" name="testPhoneNumberPattern_DemoFailedTestCase" finished-at="2026-01-02T14:44:00 IST" duration-ms="1407" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please match the format requested.Test] but found [Please match the format requested.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please match the format requested.Test] but found [Please match the format requested.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.automation.selenium.tests.form.FormPageTest.testPhoneNumberPattern_DemoFailedTestCase(FormPageTest.java:160)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPhoneNumberPattern_DemoFailedTestCase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:44:00 IST" name="tearDown" finished-at="2026-01-02T14:44:00 IST" duration-ms="477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:44:01 IST" name="tearDown" finished-at="2026-01-02T14:44:01 IST" duration-ms="472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.form.FormPageTest@7b94089b]" started-at="2026-01-02T14:44:01 IST" name="tearDown" finished-at="2026-01-02T14:44:02 IST" duration-ms="585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automation.selenium.tests.form.FormPageTest -->
+      <class name="com.automation.selenium.tests.select.SelectPageTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:36 IST" name="launchApplication" finished-at="2026-01-02T14:43:44 IST" duration-ms="7937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:36 IST" name="launchApplication" finished-at="2026-01-02T14:43:44 IST" duration-ms="7790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:37 IST" name="launchApplication" finished-at="2026-01-02T14:43:45 IST" duration-ms="8308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:37 IST" name="launchApplication" finished-at="2026-01-02T14:43:46 IST" duration-ms="8634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:38 IST" name="launchApplication" finished-at="2026-01-02T14:43:47 IST" duration-ms="8901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:44 IST" name="tempSetUp" finished-at="2026-01-02T14:43:49 IST" duration-ms="4780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:44 IST" name="tempSetUp" finished-at="2026-01-02T14:43:49 IST" duration-ms="5304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:45 IST" name="tempSetUp" finished-at="2026-01-02T14:43:51 IST" duration-ms="5940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:46 IST" name="tempSetUp" finished-at="2026-01-02T14:43:52 IST" duration-ms="6733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:47 IST" name="tempSetUp" finished-at="2026-01-02T14:43:48 IST" duration-ms="762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method signature="shouldVerifyAllCountryOptions()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:48 IST" name="shouldVerifyAllCountryOptions" finished-at="2026-01-02T14:43:52 IST" duration-ms="4141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldVerifyAllCountryOptions -->
+        <test-method signature="shouldSelectAndDeselectMultipleSuperheroes()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:49 IST" name="shouldSelectAndDeselectMultipleSuperheroes" finished-at="2026-01-02T14:43:55 IST" duration-ms="6060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldSelectAndDeselectMultipleSuperheroes -->
+        <test-method signature="shouldSelectFruitFromDropdown()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:49 IST" name="shouldSelectFruitFromDropdown" finished-at="2026-01-02T14:43:51 IST" duration-ms="1766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldSelectFruitFromDropdown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:51 IST" name="tearDown" finished-at="2026-01-02T14:43:53 IST" duration-ms="1685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="shouldSelectLanguageByIndex()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:51 IST" name="shouldSelectLanguageByIndex" finished-at="2026-01-02T14:43:52 IST" duration-ms="1089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldSelectLanguageByIndex -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:52 IST" name="tearDown" finished-at="2026-01-02T14:43:53 IST" duration-ms="782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:52 IST" name="tearDown" finished-at="2026-01-02T14:43:53 IST" duration-ms="810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="shouldSelectLanguageByValue()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:52 IST" name="shouldSelectLanguageByValue" finished-at="2026-01-02T14:43:53 IST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldSelectLanguageByValue -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:53 IST" name="tearDown" finished-at="2026-01-02T14:43:55 IST" duration-ms="2634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@47f9738]" started-at="2026-01-02T14:43:55 IST" name="tearDown" finished-at="2026-01-02T14:43:57 IST" duration-ms="2021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automation.selenium.tests.select.SelectPageTest -->
       <class name="com.automation.selenium.tests.button.ButtonPageTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:15 IST" duration-ms="10193" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:27 IST" duration-ms="15666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:14 IST" duration-ms="9760" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:20 IST" duration-ms="8018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:17 IST" duration-ms="12829" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:29 IST" duration-ms="17141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:21 IST" duration-ms="16618" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:27 IST" duration-ms="14904" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:12 IST" duration-ms="7609" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:18 IST" duration-ms="6152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:12 IST" name="tempSetUp" finished-at="2025-12-31T17:49:27 IST" duration-ms="15022" status="PASS">
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:18 IST" name="tempSetUp" finished-at="2026-01-02T14:43:21 IST" duration-ms="3163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tempSetUp -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:14 IST" name="tempSetUp" finished-at="2025-12-31T17:49:27 IST" duration-ms="12471" status="PASS">
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:20 IST" name="tempSetUp" finished-at="2026-01-02T14:43:27 IST" duration-ms="7473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tempSetUp -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:15 IST" name="tempSetUp" finished-at="2025-12-31T17:49:27 IST" duration-ms="11845" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tempSetUp -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:17 IST" name="tempSetUp" finished-at="2025-12-31T17:49:28 IST" duration-ms="10863" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tempSetUp -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:21 IST" name="tempSetUp" finished-at="2025-12-31T17:49:30 IST" duration-ms="8397" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tempSetUp -->
-        <test-method signature="shouldNavigateToHomePageOnHomeButtonClick()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:27 IST" name="shouldNavigateToHomePageOnHomeButtonClick" finished-at="2025-12-31T17:49:30 IST" duration-ms="3123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldNavigateToHomePageOnHomeButtonClick -->
-        <test-method signature="shouldFetchXAndYPositionOfButton()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:27 IST" name="shouldFetchXAndYPositionOfButton" finished-at="2025-12-31T17:49:27 IST" duration-ms="76" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldFetchXAndYPositionOfButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:27 IST" name="tearDown" finished-at="2025-12-31T17:49:33 IST" duration-ms="6196" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="shouldVerifyButtonDimensions()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:27 IST" name="shouldVerifyButtonDimensions" finished-at="2025-12-31T17:49:27 IST" duration-ms="117" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldVerifyButtonDimensions -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:27 IST" name="tearDown" finished-at="2025-12-31T17:49:33 IST" duration-ms="6038" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="shouldPerformLongPressOnButton()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:28 IST" name="shouldPerformLongPressOnButton" finished-at="2025-12-31T17:49:32 IST" duration-ms="3479" status="PASS">
+        <test-method signature="shouldPerformLongPressOnButton()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:21 IST" name="shouldPerformLongPressOnButton" finished-at="2026-01-02T14:43:25 IST" duration-ms="3546" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldPerformLongPressOnButton -->
-        <test-method signature="shouldVerifyButtonBackgroundColor()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:30 IST" name="shouldVerifyButtonBackgroundColor" finished-at="2025-12-31T17:49:30 IST" duration-ms="292" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:25 IST" name="tearDown" finished-at="2026-01-02T14:43:36 IST" duration-ms="11292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:27 IST" name="tempSetUp" finished-at="2026-01-02T14:43:33 IST" duration-ms="6157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method signature="shouldFetchXAndYPositionOfButton()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:27 IST" name="shouldFetchXAndYPositionOfButton" finished-at="2026-01-02T14:43:27 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFetchXAndYPositionOfButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:27 IST" name="tearDown" finished-at="2026-01-02T14:43:38 IST" duration-ms="11186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:27 IST" name="tempSetUp" finished-at="2026-01-02T14:43:37 IST" duration-ms="9386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:29 IST" name="tempSetUp" finished-at="2026-01-02T14:43:36 IST" duration-ms="7022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method signature="shouldNavigateToHomePageOnHomeButtonClick()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:33 IST" name="shouldNavigateToHomePageOnHomeButtonClick" finished-at="2026-01-02T14:43:34 IST" duration-ms="868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldNavigateToHomePageOnHomeButtonClick -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:34 IST" name="tearDown" finished-at="2026-01-02T14:43:43 IST" duration-ms="9270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="shouldVerifyButtonBackgroundColor()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:36 IST" name="shouldVerifyButtonBackgroundColor" finished-at="2026-01-02T14:43:36 IST" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldVerifyButtonBackgroundColor -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:30 IST" name="tearDown" finished-at="2025-12-31T17:49:34 IST" duration-ms="3926" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:36 IST" name="tearDown" finished-at="2026-01-02T14:43:45 IST" duration-ms="8927" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:30 IST" name="tearDown" finished-at="2025-12-31T17:49:33 IST" duration-ms="3618" status="PASS">
+        <test-method signature="shouldVerifyButtonDimensions()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:37 IST" name="shouldVerifyButtonDimensions" finished-at="2026-01-02T14:43:37 IST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a]" started-at="2025-12-31T17:49:32 IST" name="tearDown" finished-at="2025-12-31T17:49:34 IST" duration-ms="2629" status="PASS">
+        </test-method> <!-- shouldVerifyButtonDimensions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.button.ButtonPageTest@71812481]" started-at="2026-01-02T14:43:37 IST" name="tearDown" finished-at="2026-01-02T14:43:47 IST" duration-ms="10429" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automation.selenium.tests.button.ButtonPageTest -->
       <class name="com.automation.selenium.tests.input.InputPageTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:09 IST" duration-ms="4855" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:25 IST" duration-ms="12838" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:10 IST" duration-ms="5482" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:19 IST" duration-ms="7051" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:12 IST" duration-ms="7286" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:24 IST" duration-ms="11962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:19 IST" duration-ms="14312" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:18 IST" duration-ms="5998" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:19 IST" duration-ms="14193" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:20 IST" duration-ms="8328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:21 IST" duration-ms="16289" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:09 IST" name="tempSetUp" finished-at="2025-12-31T17:49:27 IST" duration-ms="17428" status="PASS">
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:18 IST" name="tempSetUp" finished-at="2026-01-02T14:43:21 IST" duration-ms="2924" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tempSetUp -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:10 IST" name="tempSetUp" finished-at="2025-12-31T17:49:26 IST" duration-ms="15693" status="PASS">
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:19 IST" name="tempSetUp" finished-at="2026-01-02T14:43:25 IST" duration-ms="5737" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tempSetUp -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:12 IST" name="tempSetUp" finished-at="2025-12-31T17:49:26 IST" duration-ms="13927" status="PASS">
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:20 IST" name="tempSetUp" finished-at="2026-01-02T14:43:26 IST" duration-ms="5490" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tempSetUp -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:19 IST" name="tempSetUp" finished-at="2025-12-31T17:49:29 IST" duration-ms="9822" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tempSetUp -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:19 IST" name="tempSetUp" finished-at="2025-12-31T17:49:29 IST" duration-ms="9873" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tempSetUp -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:21 IST" name="tempSetUp" finished-at="2025-12-31T17:49:29 IST" duration-ms="8549" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tempSetUp -->
-        <test-method signature="shouldGetTextFromDisabledField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:26 IST" name="shouldGetTextFromDisabledField" finished-at="2025-12-31T17:49:26 IST" duration-ms="185" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldGetTextFromDisabledField -->
-        <test-method signature="shouldVerifyNonEditableField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:26 IST" name="shouldVerifyNonEditableField" finished-at="2025-12-31T17:49:26 IST" duration-ms="144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldVerifyNonEditableField -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:26 IST" name="tearDown" finished-at="2025-12-31T17:49:33 IST" duration-ms="7034" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:26 IST" name="tearDown" finished-at="2025-12-31T17:49:33 IST" duration-ms="7017" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="shouldAppendTextToInputField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:27 IST" name="shouldAppendTextToInputField" finished-at="2025-12-31T17:49:27 IST" duration-ms="417" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldAppendTextToInputField -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:27 IST" name="tearDown" finished-at="2025-12-31T17:49:33 IST" duration-ms="5535" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="shouldEnterFullName()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:29 IST" name="shouldEnterFullName" finished-at="2025-12-31T17:49:29 IST" duration-ms="270" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldEnterFullName -->
-        <test-method signature="shouldVerifyReadOnlyFieldValue()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:29 IST" name="shouldVerifyReadOnlyFieldValue" finished-at="2025-12-31T17:49:29 IST" duration-ms="182" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldVerifyReadOnlyFieldValue -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:29 IST" name="tearDown" finished-at="2025-12-31T17:49:33 IST" duration-ms="4187" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:29 IST" name="tearDown" finished-at="2025-12-31T17:49:33 IST" duration-ms="4026" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="shouldClearInputField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:29 IST" name="shouldClearInputField" finished-at="2025-12-31T17:49:30 IST" duration-ms="250" status="PASS">
+        <test-method signature="shouldClearInputField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:21 IST" name="shouldClearInputField" finished-at="2026-01-02T14:43:21 IST" duration-ms="456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldClearInputField -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@648c94da]" started-at="2025-12-31T17:49:30 IST" name="tearDown" finished-at="2025-12-31T17:49:33 IST" duration-ms="3668" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:21 IST" name="tearDown" finished-at="2026-01-02T14:43:33 IST" duration-ms="11423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:24 IST" name="tempSetUp" finished-at="2026-01-02T14:43:30 IST" duration-ms="6338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method signature="shouldEnterFullName()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:25 IST" name="shouldEnterFullName" finished-at="2026-01-02T14:43:25 IST" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldEnterFullName -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:25 IST" name="tempSetUp" finished-at="2026-01-02T14:43:25 IST" duration-ms="741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:25 IST" name="tearDown" finished-at="2026-01-02T14:43:36 IST" duration-ms="11235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="shouldVerifyNonEditableField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:25 IST" name="shouldVerifyNonEditableField" finished-at="2026-01-02T14:43:31 IST" duration-ms="6150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldVerifyNonEditableField -->
+        <test-method signature="shouldAppendTextToInputField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:26 IST" name="shouldAppendTextToInputField" finished-at="2026-01-02T14:43:26 IST" duration-ms="362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAppendTextToInputField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:26 IST" name="tearDown" finished-at="2026-01-02T14:43:37 IST" duration-ms="11180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="shouldGetTextFromDisabledField()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:30 IST" name="shouldGetTextFromDisabledField" finished-at="2026-01-02T14:43:31 IST" duration-ms="634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldGetTextFromDisabledField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:31 IST" name="tearDown" finished-at="2026-01-02T14:43:40 IST" duration-ms="9551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:31 IST" name="tearDown" finished-at="2026-01-02T14:43:41 IST" duration-ms="9262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:33 IST" name="launchApplication" finished-at="2026-01-02T14:43:40 IST" duration-ms="7850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:40 IST" name="tempSetUp" finished-at="2026-01-02T14:43:49 IST" duration-ms="8197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tempSetUp -->
+        <test-method signature="shouldVerifyReadOnlyFieldValue()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:49 IST" name="shouldVerifyReadOnlyFieldValue" finished-at="2026-01-02T14:43:49 IST" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldVerifyReadOnlyFieldValue -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.input.InputPageTest@7ca20101]" started-at="2026-01-02T14:43:49 IST" name="tearDown" finished-at="2026-01-02T14:43:53 IST" duration-ms="3911" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automation.selenium.tests.input.InputPageTest -->
-      <class name="com.automation.selenium.tests.select.SelectPageTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:17 IST" duration-ms="12944" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:18 IST" duration-ms="13604" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:14 IST" duration-ms="9713" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:11 IST" duration-ms="6715" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:19 IST" duration-ms="14150" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:11 IST" name="tempSetUp" finished-at="2025-12-31T17:49:25 IST" duration-ms="14108" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tempSetUp -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:14 IST" name="tempSetUp" finished-at="2025-12-31T17:49:27 IST" duration-ms="13130" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tempSetUp -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:17 IST" name="tempSetUp" finished-at="2025-12-31T17:49:28 IST" duration-ms="10749" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tempSetUp -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:18 IST" name="tempSetUp" finished-at="2025-12-31T17:49:29 IST" duration-ms="10534" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tempSetUp -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:19 IST" name="tempSetUp" finished-at="2025-12-31T17:49:29 IST" duration-ms="9934" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tempSetUp -->
-        <test-method signature="shouldSelectLanguageByIndex()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:25 IST" name="shouldSelectLanguageByIndex" finished-at="2025-12-31T17:49:28 IST" duration-ms="2840" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldSelectLanguageByIndex -->
-        <test-method signature="shouldSelectFruitFromDropdown()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:27 IST" name="shouldSelectFruitFromDropdown" finished-at="2025-12-31T17:49:30 IST" duration-ms="2551" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldSelectFruitFromDropdown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:28 IST" name="tearDown" finished-at="2025-12-31T17:49:33 IST" duration-ms="5208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="shouldSelectLanguageByValue()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:28 IST" name="shouldSelectLanguageByValue" finished-at="2025-12-31T17:49:30 IST" duration-ms="1851" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldSelectLanguageByValue -->
-        <test-method signature="shouldSelectAndDeselectMultipleSuperheroes()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:29 IST" name="shouldSelectAndDeselectMultipleSuperheroes" finished-at="2025-12-31T17:49:35 IST" duration-ms="6485" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldSelectAndDeselectMultipleSuperheroes -->
-        <test-method signature="shouldVerifyAllCountryOptions()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:29 IST" name="shouldVerifyAllCountryOptions" finished-at="2025-12-31T17:49:30 IST" duration-ms="1443" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldVerifyAllCountryOptions -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:30 IST" name="tearDown" finished-at="2025-12-31T17:49:34 IST" duration-ms="3902" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:30 IST" name="tearDown" finished-at="2025-12-31T17:49:34 IST" duration-ms="3734" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:30 IST" name="tearDown" finished-at="2025-12-31T17:49:34 IST" duration-ms="3585" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.select.SelectPageTest@2a62b5bc]" started-at="2025-12-31T17:49:35 IST" name="tearDown" finished-at="2025-12-31T17:49:37 IST" duration-ms="1762" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.automation.selenium.tests.select.SelectPageTest -->
-      <class name="com.automation.selenium.tests.LoginTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.LoginTest@53de625d]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:14 IST" duration-ms="9850" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="exampleTestCaseFirst()[pri:0, instance:com.automation.selenium.tests.LoginTest@53de625d]" started-at="2025-12-31T17:49:14 IST" name="exampleTestCaseFirst" finished-at="2025-12-31T17:49:14 IST" duration-ms="24" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exampleTestCaseFirst -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.LoginTest@53de625d]" started-at="2025-12-31T17:49:14 IST" name="tearDown" finished-at="2025-12-31T17:49:26 IST" duration-ms="11773" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.automation.selenium.tests.LoginTest -->
       <class name="com.automation.selenium.tests.alert.AlertPageTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:17 IST" duration-ms="12487" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:32 IST" duration-ms="19802" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:19 IST" duration-ms="14406" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:32 IST" duration-ms="20022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:19 IST" duration-ms="14346" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:28 IST" duration-ms="16067" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" started-at="2025-12-31T17:49:04 IST" name="launchApplication" finished-at="2025-12-31T17:49:19 IST" duration-ms="14195" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" started-at="2026-01-02T14:43:12 IST" name="launchApplication" finished-at="2026-01-02T14:43:27 IST" duration-ms="14849" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" started-at="2025-12-31T17:49:17 IST" name="tempSetUp" finished-at="2025-12-31T17:49:28 IST" duration-ms="11024" status="PASS">
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" started-at="2026-01-02T14:43:27 IST" name="tempSetUp" finished-at="2026-01-02T14:43:33 IST" duration-ms="6170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tempSetUp -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" started-at="2025-12-31T17:49:19 IST" name="tempSetUp" finished-at="2025-12-31T17:49:28 IST" duration-ms="9687" status="PASS">
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" started-at="2026-01-02T14:43:28 IST" name="tempSetUp" finished-at="2026-01-02T14:43:37 IST" duration-ms="9097" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tempSetUp -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" started-at="2025-12-31T17:49:19 IST" name="tempSetUp" finished-at="2025-12-31T17:49:30 IST" duration-ms="11262" status="PASS">
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" started-at="2026-01-02T14:43:32 IST" name="tempSetUp" finished-at="2026-01-02T14:43:37 IST" duration-ms="5303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tempSetUp -->
-        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" started-at="2025-12-31T17:49:19 IST" name="tempSetUp" finished-at="2025-12-31T17:49:22 IST" duration-ms="3135" status="PASS">
+        <test-method is-config="true" signature="tempSetUp()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" started-at="2026-01-02T14:43:32 IST" name="tempSetUp" finished-at="2026-01-02T14:43:39 IST" duration-ms="7315" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tempSetUp -->
-        <test-method signature="shouldHandleSimpleAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" started-at="2025-12-31T17:49:22 IST" name="shouldHandleSimpleAlert" finished-at="2025-12-31T17:49:29 IST" duration-ms="7331" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldHandleSimpleAlert -->
-        <test-method signature="shouldHandleConfirmAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" started-at="2025-12-31T17:49:28 IST" name="shouldHandleConfirmAlert" finished-at="2025-12-31T17:49:28 IST" duration-ms="465" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldHandleConfirmAlert -->
-        <test-method signature="shouldHandleModernAlertModal()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" started-at="2025-12-31T17:49:28 IST" name="shouldHandleModernAlertModal" finished-at="2025-12-31T17:49:30 IST" duration-ms="1540" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldHandleModernAlertModal -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" started-at="2025-12-31T17:49:28 IST" name="tearDown" finished-at="2025-12-31T17:49:33 IST" duration-ms="4618" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" started-at="2025-12-31T17:49:29 IST" name="tearDown" finished-at="2025-12-31T17:49:33 IST" duration-ms="3763" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" started-at="2025-12-31T17:49:30 IST" name="tearDown" finished-at="2025-12-31T17:49:33 IST" duration-ms="3563" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="shouldHandlePromptAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" started-at="2025-12-31T17:49:30 IST" name="shouldHandlePromptAlert" finished-at="2025-12-31T17:49:30 IST" duration-ms="216" status="PASS">
+        <test-method signature="shouldHandlePromptAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" started-at="2026-01-02T14:43:33 IST" name="shouldHandlePromptAlert" finished-at="2026-01-02T14:43:34 IST" duration-ms="869" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldHandlePromptAlert -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@65a15628]" started-at="2025-12-31T17:49:30 IST" name="tearDown" finished-at="2025-12-31T17:49:34 IST" duration-ms="3492" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" started-at="2026-01-02T14:43:34 IST" name="tearDown" finished-at="2026-01-02T14:43:43 IST" duration-ms="9845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="shouldHandleSimpleAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" started-at="2026-01-02T14:43:37 IST" name="shouldHandleSimpleAlert" finished-at="2026-01-02T14:43:37 IST" duration-ms="555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldHandleSimpleAlert -->
+        <test-method signature="shouldHandleConfirmAlert()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" started-at="2026-01-02T14:43:37 IST" name="shouldHandleConfirmAlert" finished-at="2026-01-02T14:43:37 IST" duration-ms="287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldHandleConfirmAlert -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" started-at="2026-01-02T14:43:37 IST" name="tearDown" finished-at="2026-01-02T14:43:47 IST" duration-ms="10025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" started-at="2026-01-02T14:43:37 IST" name="tearDown" finished-at="2026-01-02T14:43:47 IST" duration-ms="9785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="shouldHandleModernAlertModal()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" started-at="2026-01-02T14:43:39 IST" name="shouldHandleModernAlertModal" finished-at="2026-01-02T14:43:40 IST" duration-ms="633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldHandleModernAlertModal -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb]" started-at="2026-01-02T14:43:40 IST" name="tearDown" finished-at="2026-01-02T14:43:51 IST" duration-ms="11002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

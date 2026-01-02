@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ParallelClasses</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>30/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 31 17:49:04 IST 2025</td>
+<td>Started on:</td><td>Fri Jan 02 14:43:12 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>32 seconds (32499 ms)</td>
+<tr><td>Total time:</td><td>50 seconds (50489 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,47 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.automation.selenium.tests.form.FormPageTest.testPhoneNumberPattern_DemoFailedTestCase()'><b>testPhoneNumberPattern_DemoFailedTestCase</b><br>Test class: com.automation.selenium.tests.form.FormPageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Please match the format requested.Test] but found [Please match the format requested.]
+	at com.automation.selenium.tests.form.FormPageTest.testPhoneNumberPattern_DemoFailedTestCase(FormPageTest.java:160)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace503959191", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace503959191'><pre>java.lang.AssertionError: expected [Please match the format requested.Test] but found [Please match the format requested.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.automation.selenium.tests.form.FormPageTest.testPhoneNumberPattern_DemoFailedTestCase(FormPageTest.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>1</td>
+<td>com.automation.selenium.tests.form.FormPageTest@7b94089b</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,110 +117,196 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.automation.selenium.tests.input.InputPageTest.shouldVerifyNonEditableField()'><b>shouldVerifyNonEditableField</b><br>Test class: com.automation.selenium.tests.input.InputPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.automation.selenium.tests.input.InputPageTest@648c94da</td></tr>
-<tr>
-<td title='com.automation.selenium.tests.input.InputPageTest.shouldClearInputField()'><b>shouldClearInputField</b><br>Test class: com.automation.selenium.tests.input.InputPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.automation.selenium.tests.input.InputPageTest@648c94da</td></tr>
-<tr>
-<td title='com.automation.selenium.tests.button.ButtonPageTest.shouldVerifyButtonBackgroundColor()'><b>shouldVerifyButtonBackgroundColor</b><br>Test class: com.automation.selenium.tests.button.ButtonPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a</td></tr>
-<tr>
-<td title='com.automation.selenium.tests.alert.AlertPageTest.shouldHandleConfirmAlert()'><b>shouldHandleConfirmAlert</b><br>Test class: com.automation.selenium.tests.alert.AlertPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.automation.selenium.tests.alert.AlertPageTest@65a15628</td></tr>
-<tr>
-<td title='com.automation.selenium.tests.select.SelectPageTest.shouldSelectLanguageByIndex()'><b>shouldSelectLanguageByIndex</b><br>Test class: com.automation.selenium.tests.select.SelectPageTest</td>
-<td></td>
-<td>2</td>
-<td>com.automation.selenium.tests.select.SelectPageTest@2a62b5bc</td></tr>
-<tr>
-<td title='com.automation.selenium.tests.input.InputPageTest.shouldEnterFullName()'><b>shouldEnterFullName</b><br>Test class: com.automation.selenium.tests.input.InputPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.automation.selenium.tests.input.InputPageTest@648c94da</td></tr>
-<tr>
-<td title='com.automation.selenium.tests.select.SelectPageTest.shouldSelectAndDeselectMultipleSuperheroes()'><b>shouldSelectAndDeselectMultipleSuperheroes</b><br>Test class: com.automation.selenium.tests.select.SelectPageTest</td>
+<td title='com.automation.selenium.tests.form.FormPageTest.testFormSubmission()'><b>testFormSubmission</b><br>Test class: com.automation.selenium.tests.form.FormPageTest</td>
 <td></td>
 <td>6</td>
-<td>com.automation.selenium.tests.select.SelectPageTest@2a62b5bc</td></tr>
-<tr>
-<td title='com.automation.selenium.tests.button.ButtonPageTest.shouldFetchXAndYPositionOfButton()'><b>shouldFetchXAndYPositionOfButton</b><br>Test class: com.automation.selenium.tests.button.ButtonPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a</td></tr>
-<tr>
-<td title='com.automation.selenium.tests.input.InputPageTest.shouldAppendTextToInputField()'><b>shouldAppendTextToInputField</b><br>Test class: com.automation.selenium.tests.input.InputPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.automation.selenium.tests.input.InputPageTest@648c94da</td></tr>
-<tr>
-<td title='com.automation.selenium.tests.alert.AlertPageTest.shouldHandleSimpleAlert()'><b>shouldHandleSimpleAlert</b><br>Test class: com.automation.selenium.tests.alert.AlertPageTest</td>
-<td></td>
-<td>7</td>
-<td>com.automation.selenium.tests.alert.AlertPageTest@65a15628</td></tr>
-<tr>
-<td title='com.automation.selenium.tests.button.ButtonPageTest.shouldPerformLongPressOnButton()'><b>shouldPerformLongPressOnButton</b><br>Test class: com.automation.selenium.tests.button.ButtonPageTest</td>
-<td></td>
-<td>3</td>
-<td>com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a</td></tr>
-<tr>
-<td title='com.automation.selenium.tests.button.ButtonPageTest.shouldVerifyButtonDimensions()'><b>shouldVerifyButtonDimensions</b><br>Test class: com.automation.selenium.tests.button.ButtonPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a</td></tr>
-<tr>
-<td title='com.automation.selenium.tests.select.SelectPageTest.shouldSelectFruitFromDropdown()'><b>shouldSelectFruitFromDropdown</b><br>Test class: com.automation.selenium.tests.select.SelectPageTest</td>
-<td></td>
-<td>2</td>
-<td>com.automation.selenium.tests.select.SelectPageTest@2a62b5bc</td></tr>
-<tr>
-<td title='com.automation.selenium.tests.alert.AlertPageTest.shouldHandleModernAlertModal()'><b>shouldHandleModernAlertModal</b><br>Test class: com.automation.selenium.tests.alert.AlertPageTest</td>
-<td></td>
-<td>1</td>
-<td>com.automation.selenium.tests.alert.AlertPageTest@65a15628</td></tr>
+<td>com.automation.selenium.tests.form.FormPageTest@7b94089b</td></tr>
 <tr>
 <td title='com.automation.selenium.tests.input.InputPageTest.shouldVerifyReadOnlyFieldValue()'><b>shouldVerifyReadOnlyFieldValue</b><br>Test class: com.automation.selenium.tests.input.InputPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.automation.selenium.tests.input.InputPageTest@648c94da</td></tr>
+<td>com.automation.selenium.tests.input.InputPageTest@7ca20101</td></tr>
 <tr>
-<td title='com.automation.selenium.tests.LoginTest.exampleTestCaseFirst()'><b>exampleTestCaseFirst</b><br>Test class: com.automation.selenium.tests.LoginTest</td>
+<td title='com.automation.selenium.tests.input.InputPageTest.shouldClearInputField()'><b>shouldClearInputField</b><br>Test class: com.automation.selenium.tests.input.InputPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.automation.selenium.tests.LoginTest@53de625d</td></tr>
+<td>com.automation.selenium.tests.input.InputPageTest@7ca20101</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.alert.AlertPageTest.shouldHandleSimpleAlert()'><b>shouldHandleSimpleAlert</b><br>Test class: com.automation.selenium.tests.alert.AlertPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb</td></tr>
 <tr>
 <td title='com.automation.selenium.tests.select.SelectPageTest.shouldSelectLanguageByValue()'><b>shouldSelectLanguageByValue</b><br>Test class: com.automation.selenium.tests.select.SelectPageTest</td>
 <td></td>
-<td>1</td>
-<td>com.automation.selenium.tests.select.SelectPageTest@2a62b5bc</td></tr>
+<td>0</td>
+<td>com.automation.selenium.tests.select.SelectPageTest@47f9738</td></tr>
 <tr>
-<td title='com.automation.selenium.tests.alert.AlertPageTest.shouldHandlePromptAlert()'><b>shouldHandlePromptAlert</b><br>Test class: com.automation.selenium.tests.alert.AlertPageTest</td>
+<td title='com.automation.selenium.tests.form.FormPageTest.testEmptyFirstName()'><b>testEmptyFirstName</b><br>Test class: com.automation.selenium.tests.form.FormPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.automation.selenium.tests.form.FormPageTest@7b94089b</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.form.FormPageTest.dataDrivenTestDevelopment()'><b>dataDrivenTestDevelopment</b><br>Test class: com.automation.selenium.tests.form.FormPageTest<br>Parameters: Jay, Panchal</td>
+<td></td>
+<td>6</td>
+<td>com.automation.selenium.tests.form.FormPageTest@7b94089b</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.button.ButtonPageTest.shouldNavigateToHomePageOnHomeButtonClick()'><b>shouldNavigateToHomePageOnHomeButtonClick</b><br>Test class: com.automation.selenium.tests.button.ButtonPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.automation.selenium.tests.alert.AlertPageTest@65a15628</td></tr>
+<td>com.automation.selenium.tests.button.ButtonPageTest@71812481</td></tr>
 <tr>
-<td title='com.automation.selenium.tests.select.SelectPageTest.shouldVerifyAllCountryOptions()'><b>shouldVerifyAllCountryOptions</b><br>Test class: com.automation.selenium.tests.select.SelectPageTest</td>
+<td title='com.automation.selenium.tests.form.FormPageTest.dataDrivenTestDevelopment_JsonData()'><b>dataDrivenTestDevelopment_JsonData</b><br>Test class: com.automation.selenium.tests.form.FormPageTest<br>Parameters: {"firstName":"Rajesh","lastName":"Patel","email":"john.doe@example.com","countryCode":"91","phone":"9876543210","address1":"456 Elm St","address2":"Flat 2A","state":"CA","postalCode":"90001","country":"India","dob":"1992-05-10","gender":"male"}</td>
 <td></td>
-<td>1</td>
-<td>com.automation.selenium.tests.select.SelectPageTest@2a62b5bc</td></tr>
+<td>3</td>
+<td>com.automation.selenium.tests.form.FormPageTest@7b94089b</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.frame.FramePageTest.shouldFillDetailsInsideIframe()'><b>shouldFillDetailsInsideIframe</b><br>Test class: com.automation.selenium.tests.frame.FramePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.automation.selenium.tests.frame.FramePageTest@16ce702d</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.form.FormPageTest.testInvalidEmail()'><b>testInvalidEmail</b><br>Test class: com.automation.selenium.tests.form.FormPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.automation.selenium.tests.form.FormPageTest@7b94089b</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.form.FormPageTest.dataDrivenTestDevelopment()'><b>dataDrivenTestDevelopment</b><br>Test class: com.automation.selenium.tests.form.FormPageTest<br>Parameters: Bhargav, Gohil</td>
+<td></td>
+<td>7</td>
+<td>com.automation.selenium.tests.form.FormPageTest@7b94089b</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.button.ButtonPageTest.shouldFetchXAndYPositionOfButton()'><b>shouldFetchXAndYPositionOfButton</b><br>Test class: com.automation.selenium.tests.button.ButtonPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.automation.selenium.tests.button.ButtonPageTest@71812481</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.select.SelectPageTest.shouldSelectAndDeselectMultipleSuperheroes()'><b>shouldSelectAndDeselectMultipleSuperheroes</b><br>Test class: com.automation.selenium.tests.select.SelectPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.automation.selenium.tests.select.SelectPageTest@47f9738</td></tr>
 <tr>
 <td title='com.automation.selenium.tests.input.InputPageTest.shouldGetTextFromDisabledField()'><b>shouldGetTextFromDisabledField</b><br>Test class: com.automation.selenium.tests.input.InputPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.automation.selenium.tests.input.InputPageTest@648c94da</td></tr>
+<td>com.automation.selenium.tests.input.InputPageTest@7ca20101</td></tr>
 <tr>
-<td title='com.automation.selenium.tests.button.ButtonPageTest.shouldNavigateToHomePageOnHomeButtonClick()'><b>shouldNavigateToHomePageOnHomeButtonClick</b><br>Test class: com.automation.selenium.tests.button.ButtonPageTest</td>
+<td title='com.automation.selenium.tests.frame.FramePageTest.shouldEnterEmailInsideInnerIframe()'><b>shouldEnterEmailInsideInnerIframe</b><br>Test class: com.automation.selenium.tests.frame.FramePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.automation.selenium.tests.frame.FramePageTest@16ce702d</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.button.ButtonPageTest.shouldVerifyButtonBackgroundColor()'><b>shouldVerifyButtonBackgroundColor</b><br>Test class: com.automation.selenium.tests.button.ButtonPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.automation.selenium.tests.button.ButtonPageTest@71812481</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.select.SelectPageTest.shouldVerifyAllCountryOptions()'><b>shouldVerifyAllCountryOptions</b><br>Test class: com.automation.selenium.tests.select.SelectPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.automation.selenium.tests.select.SelectPageTest@47f9738</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.form.FormPageTest.testPhoneNumberPattern()'><b>testPhoneNumberPattern</b><br>Test class: com.automation.selenium.tests.form.FormPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.automation.selenium.tests.form.FormPageTest@7b94089b</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.alert.AlertPageTest.shouldHandleConfirmAlert()'><b>shouldHandleConfirmAlert</b><br>Test class: com.automation.selenium.tests.alert.AlertPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.alert.AlertPageTest.shouldHandleModernAlertModal()'><b>shouldHandleModernAlertModal</b><br>Test class: com.automation.selenium.tests.alert.AlertPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.form.FormPageTest.dataDrivenTestDevelopment_JsonData()'><b>dataDrivenTestDevelopment_JsonData</b><br>Test class: com.automation.selenium.tests.form.FormPageTest<br>Parameters: {"firstName":"Rahul","lastName":"Gohil","email":"bhargav@mail.com","countryCode":"91","phone":"1234567890","address1":"123 Main St","address2":"Apt 4B","state":"NY","postalCode":"10001","country":"India","dob":"1990-01-01","gender":"male"}</td>
+<td></td>
+<td>11</td>
+<td>com.automation.selenium.tests.form.FormPageTest@7b94089b</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.alert.AlertPageTest.shouldHandlePromptAlert()'><b>shouldHandlePromptAlert</b><br>Test class: com.automation.selenium.tests.alert.AlertPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.automation.selenium.tests.alert.AlertPageTest@5a1de7fb</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.button.ButtonPageTest.shouldPerformLongPressOnButton()'><b>shouldPerformLongPressOnButton</b><br>Test class: com.automation.selenium.tests.button.ButtonPageTest</td>
 <td></td>
 <td>3</td>
-<td>com.automation.selenium.tests.button.ButtonPageTest@5e4bd84a</td></tr>
+<td>com.automation.selenium.tests.button.ButtonPageTest@71812481</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.input.InputPageTest.shouldAppendTextToInputField()'><b>shouldAppendTextToInputField</b><br>Test class: com.automation.selenium.tests.input.InputPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.automation.selenium.tests.input.InputPageTest@7ca20101</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.button.ButtonPageTest.shouldVerifyButtonDimensions()'><b>shouldVerifyButtonDimensions</b><br>Test class: com.automation.selenium.tests.button.ButtonPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.automation.selenium.tests.button.ButtonPageTest@71812481</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.input.InputPageTest.shouldVerifyNonEditableField()'><b>shouldVerifyNonEditableField</b><br>Test class: com.automation.selenium.tests.input.InputPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.automation.selenium.tests.input.InputPageTest@7ca20101</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.select.SelectPageTest.shouldSelectFruitFromDropdown()'><b>shouldSelectFruitFromDropdown</b><br>Test class: com.automation.selenium.tests.select.SelectPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.automation.selenium.tests.select.SelectPageTest@47f9738</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.input.InputPageTest.shouldEnterFullName()'><b>shouldEnterFullName</b><br>Test class: com.automation.selenium.tests.input.InputPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.automation.selenium.tests.input.InputPageTest@7ca20101</td></tr>
+<tr>
+<td title='com.automation.selenium.tests.select.SelectPageTest.shouldSelectLanguageByIndex()'><b>shouldSelectLanguageByIndex</b><br>Test class: com.automation.selenium.tests.select.SelectPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.automation.selenium.tests.select.SelectPageTest@47f9738</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.automation.selenium.tests.form.FormPageTest.testPhoneNumberPattern_DemoFailedTestCase()'><b>testPhoneNumberPattern_DemoFailedTestCase</b><br>Test class: com.automation.selenium.tests.form.FormPageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Please match the format requested.Test] but found [Please match the format requested.]
+	at com.automation.selenium.tests.form.FormPageTest.testPhoneNumberPattern_DemoFailedTestCase(FormPageTest.java:160)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace725036798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace725036798'><pre>java.lang.AssertionError: expected [Please match the format requested.Test] but found [Please match the format requested.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.automation.selenium.tests.form.FormPageTest.testPhoneNumberPattern_DemoFailedTestCase(FormPageTest.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>5</td>
+<td>com.automation.selenium.tests.form.FormPageTest@7b94089b</td></tr>
 </table><p>
 </body>
 </html>

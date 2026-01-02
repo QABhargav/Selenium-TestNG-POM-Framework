@@ -18,6 +18,7 @@ The framework supports:
 - Retry mechanism for flaky tests
 - Clean reporting with author, steps, screenshots
 - Future expansion for API and Mobile automation
+- Data-driven testing using Excel and JSON (no hardcoded test data)
 
 This is designed as a real-world, production-style automation framework.
 
@@ -39,6 +40,9 @@ This is designed as a real-world, production-style automation framework.
     - Screenshots on failure
 - Maven-based execution
 - CI/CD ready structure
+- Data-driven testing with Excel and JSON support for test data 
+
+This is designed as a real-world, production-style automation framework, not a demo project. It is also a **data-driven testing project** that leverages Excel and JSON files for flexible test data management, allowing easy parameterization of test cases without code changes.
 
 ---
 

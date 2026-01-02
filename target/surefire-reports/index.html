@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>3 groups</span>
+                    <span>4 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">21 methods,   21 passed</span>
+                    <span class="method-stats">32 methods, 1 failed,  1 skipped,  30 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.automation.selenium.tests.form.FormPageTest" class="method navigator-link" hash-for-method="testPhoneNumberPattern_DemoFailedTestCase">testPhoneNumberPattern_DemoFailedTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.automation.selenium.tests.form.FormPageTest" class="method navigator-link" hash-for-method="testPhoneNumberPattern_DemoFailedTestCase">testPhoneNumberPattern_DemoFailedTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +131,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.automation.selenium.tests.LoginTest" class="method navigator-link" hash-for-method="exampleTestCaseFirst">exampleTestCaseFirst</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.automation.selenium.tests.form.FormPageTest" class="method navigator-link" hash-for-method="dataDrivenTestDevelopment(Jay, Panchal)">dataDrivenTestDevelopment(Jay, Panchal)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.automation.selenium.tests.form.FormPageTest" class="method navigator-link" hash-for-method="dataDrivenTestDevelopment(Bhargav, Gohil)">dataDrivenTestDevelopment(Bhargav, Gohil)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.automation.selenium.tests.form.FormPageTest" class="method navigator-link" hash-for-method="dataDrivenTestDevelopment_JsonData({&quot;firstName&quot;:&quot;Rajesh&quot;,&quot;lastName&quot;:&quot;Patel&quot;,&quot;email&quot;:&quot;john.doe@example.com&quot;,&quot;countryCode&quot;:&quot;91&quot;,&quot;phone&quot;:&quot;...)">dataDrivenTestDevelopment_JsonData({"firstName":"Rajesh","lastName":"Patel","email":"john.doe@example.com","countryCode":"91","phone":"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.automation.selenium.tests.form.FormPageTest" class="method navigator-link" hash-for-method="dataDrivenTestDevelopment_JsonData({&quot;firstName&quot;:&quot;Rahul&quot;,&quot;lastName&quot;:&quot;Gohil&quot;,&quot;email&quot;:&quot;bhargav@mail.com&quot;,&quot;countryCode&quot;:&quot;91&quot;,&quot;phone&quot;:&quot;12345...)">dataDrivenTestDevelopment_JsonData({"firstName":"Rahul","lastName":"Gohil","email":"bhargav@mail.com","countryCode":"91","phone":"12345...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -118,12 +161,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.automation.selenium.tests.frame.FramePageTest" class="method navigator-link" hash-for-method="shouldEnterEmailInsideInnerIframe">shouldEnterEmailInsideInnerIframe</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.automation.selenium.tests.input.InputPageTest" class="method navigator-link" hash-for-method="shouldEnterFullName">shouldEnterFullName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.automation.selenium.tests.button.ButtonPageTest" class="method navigator-link" hash-for-method="shouldFetchXAndYPositionOfButton">shouldFetchXAndYPositionOfButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.automation.selenium.tests.frame.FramePageTest" class="method navigator-link" hash-for-method="shouldFillDetailsInsideIframe">shouldFillDetailsInsideIframe</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -206,6 +259,26 @@
                         <a href="#" panel-name="suite-Suite" title="com.automation.selenium.tests.input.InputPageTest" class="method navigator-link" hash-for-method="shouldVerifyReadOnlyFieldValue">shouldVerifyReadOnlyFieldValue</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.automation.selenium.tests.form.FormPageTest" class="method navigator-link" hash-for-method="testEmptyFirstName">testEmptyFirstName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.automation.selenium.tests.form.FormPageTest" class="method navigator-link" hash-for-method="testFormSubmission">testFormSubmission</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.automation.selenium.tests.form.FormPageTest" class="method navigator-link" hash-for-method="testInvalidEmail">testInvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.automation.selenium.tests.form.FormPageTest" class="method navigator-link" hash-for-method="testPhoneNumberPattern">testPhoneNumberPattern</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -218,60 +291,114 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.automation.selenium.tests.select.SelectPageTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.automation.selenium.tests.form.FormPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="shouldSelectAndDeselectMultipleSuperheroes">
-                  </a> <!-- shouldSelectAndDeselectMultipleSuperheroes -->
-                  <span class="method-name">shouldSelectAndDeselectMultipleSuperheroes</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="shouldSelectFruitFromDropdown">
-                  </a> <!-- shouldSelectFruitFromDropdown -->
-                  <span class="method-name">shouldSelectFruitFromDropdown</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="shouldSelectLanguageByIndex">
-                  </a> <!-- shouldSelectLanguageByIndex -->
-                  <span class="method-name">shouldSelectLanguageByIndex</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="shouldSelectLanguageByValue">
-                  </a> <!-- shouldSelectLanguageByValue -->
-                  <span class="method-name">shouldSelectLanguageByValue</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="shouldVerifyAllCountryOptions">
-                  </a> <!-- shouldVerifyAllCountryOptions -->
-                  <span class="method-name">shouldVerifyAllCountryOptions</span>
+                  <a name="testPhoneNumberPattern_DemoFailedTestCase">
+                  </a> <!-- testPhoneNumberPattern_DemoFailedTestCase -->
+                  <span class="method-name">testPhoneNumberPattern_DemoFailedTestCase</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Please match the format requested.Test] but found [Please match the format requested.]
+	at com.automation.selenium.tests.form.FormPageTest.testPhoneNumberPattern_DemoFailedTestCase(FormPageTest.java:160)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.automation.selenium.tests.LoginTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.automation.selenium.tests.form.FormPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="exampleTestCaseFirst">
-                  </a> <!-- exampleTestCaseFirst -->
-                  <span class="method-name">exampleTestCaseFirst</span>
+                  <a name="testPhoneNumberPattern_DemoFailedTestCase">
+                  </a> <!-- testPhoneNumberPattern_DemoFailedTestCase -->
+                  <span class="method-name">testPhoneNumberPattern_DemoFailedTestCase</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Please match the format requested.Test] but found [Please match the format requested.]
+	at com.automation.selenium.tests.form.FormPageTest.testPhoneNumberPattern_DemoFailedTestCase(FormPageTest.java:160)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.selenium.tests.form.FormPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dataDrivenTestDevelopment(Jay, Panchal)">
+                  </a> <!-- dataDrivenTestDevelopment(Jay, Panchal) -->
+                  <span class="method-name">dataDrivenTestDevelopment</span>
+                  <span class="parameters">(Jay,Panchal)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dataDrivenTestDevelopment(Bhargav, Gohil)">
+                  </a> <!-- dataDrivenTestDevelopment(Bhargav, Gohil) -->
+                  <span class="method-name">dataDrivenTestDevelopment</span>
+                  <span class="parameters">(Bhargav,Gohil)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dataDrivenTestDevelopment_JsonData({&quot;firstName&quot;:&quot;Rajesh&quot;,&quot;lastName&quot;:&quot;Patel&quot;,&quot;email&quot;:&quot;john.doe@example.com&quot;,&quot;countryCode&quot;:&quot;91&quot;,&quot;phone&quot;:&quot;...)">
+                  </a> <!-- dataDrivenTestDevelopment_JsonData({"firstName":"Rajesh","lastName":"Patel","email":"john.doe@example.com","countryCode":"91","phone":"...) -->
+                  <span class="method-name">dataDrivenTestDevelopment_JsonData</span>
+                  <span class="parameters">({"firstName":"Rajesh","lastName":"Patel","email":"john.doe@example.com","countryCode":"91","phone":"9876543210","address1":"456 Elm St","address2":"Flat 2A","state":"CA","postalCode":"90001","country":"India","dob":"1992-05-10","gender":"male"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dataDrivenTestDevelopment_JsonData({&quot;firstName&quot;:&quot;Rahul&quot;,&quot;lastName&quot;:&quot;Gohil&quot;,&quot;email&quot;:&quot;bhargav@mail.com&quot;,&quot;countryCode&quot;:&quot;91&quot;,&quot;phone&quot;:&quot;12345...)">
+                  </a> <!-- dataDrivenTestDevelopment_JsonData({"firstName":"Rahul","lastName":"Gohil","email":"bhargav@mail.com","countryCode":"91","phone":"12345...) -->
+                  <span class="method-name">dataDrivenTestDevelopment_JsonData</span>
+                  <span class="parameters">({"firstName":"Rahul","lastName":"Gohil","email":"bhargav@mail.com","countryCode":"91","phone":"1234567890","address1":"123 Main St","address2":"Apt 4B","state":"NY","postalCode":"10001","country":"India","dob":"1990-01-01","gender":"male"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyFirstName">
+                  </a> <!-- testEmptyFirstName -->
+                  <span class="method-name">testEmptyFirstName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFormSubmission">
+                  </a> <!-- testFormSubmission -->
+                  <span class="method-name">testFormSubmission</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidEmail">
+                  </a> <!-- testInvalidEmail -->
+                  <span class="method-name">testInvalidEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneNumberPattern">
+                  </a> <!-- testPhoneNumberPattern -->
+                  <span class="method-name">testPhoneNumberPattern</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -322,6 +449,71 @@
                   <a name="shouldVerifyReadOnlyFieldValue">
                   </a> <!-- shouldVerifyReadOnlyFieldValue -->
                   <span class="method-name">shouldVerifyReadOnlyFieldValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.selenium.tests.frame.FramePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldEnterEmailInsideInnerIframe">
+                  </a> <!-- shouldEnterEmailInsideInnerIframe -->
+                  <span class="method-name">shouldEnterEmailInsideInnerIframe</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldFillDetailsInsideIframe">
+                  </a> <!-- shouldFillDetailsInsideIframe -->
+                  <span class="method-name">shouldFillDetailsInsideIframe</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.selenium.tests.select.SelectPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldSelectAndDeselectMultipleSuperheroes">
+                  </a> <!-- shouldSelectAndDeselectMultipleSuperheroes -->
+                  <span class="method-name">shouldSelectAndDeselectMultipleSuperheroes</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldSelectFruitFromDropdown">
+                  </a> <!-- shouldSelectFruitFromDropdown -->
+                  <span class="method-name">shouldSelectFruitFromDropdown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldSelectLanguageByIndex">
+                  </a> <!-- shouldSelectLanguageByIndex -->
+                  <span class="method-name">shouldSelectLanguageByIndex</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldSelectLanguageByValue">
+                  </a> <!-- shouldSelectLanguageByValue -->
+                  <span class="method-name">shouldSelectLanguageByValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldVerifyAllCountryOptions">
+                  </a> <!-- shouldVerifyAllCountryOptions -->
+                  <span class="method-name">shouldVerifyAllCountryOptions</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -419,6 +611,8 @@
     &lt;classes&gt;
       &lt;class name=&quot;com.automation.selenium.tests.alert.AlertPageTest&quot;/&gt;
       &lt;class name=&quot;com.automation.selenium.tests.button.ButtonPageTest&quot;/&gt;
+      &lt;class name=&quot;com.automation.selenium.tests.frame.FramePageTest&quot;/&gt;
+      &lt;class name=&quot;com.automation.selenium.tests.form.FormPageTest&quot;/&gt;
       &lt;class name=&quot;com.automation.selenium.tests.input.InputPageTest&quot;/&gt;
       &lt;class name=&quot;com.automation.selenium.tests.select.SelectPageTest&quot;/&gt;
       &lt;class name=&quot;com.automation.selenium.tests.LoginTest&quot;/&gt;
@@ -435,7 +629,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">ParallelClasses (5 classes)</span>
+                <span class="test-name">ParallelClasses (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -446,8 +640,24 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
+              <span class="test-group-name">Critical</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testFormSubmission</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
               <span class="test-group-name">Regression</span>
               <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">dataDrivenTestDevelopment</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">dataDrivenTestDevelopment_JsonData</span>
+                <br/>
+              </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">shouldAppendTextToInputField</span>
                 <br/>
@@ -457,11 +667,19 @@
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">shouldEnterEmailInsideInnerIframe</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">shouldEnterFullName</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">shouldFetchXAndYPositionOfButton</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">shouldFillDetailsInsideIframe</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -528,12 +746,36 @@
                 <span class="method-in-group-name">shouldVerifyReadOnlyFieldValue</span>
                 <br/>
               </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testEmptyFirstName</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testFormSubmission</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testPhoneNumberPattern</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testPhoneNumberPattern_DemoFailedTestCase</span>
+                <br/>
+              </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
               <span class="test-group-name">Sanity</span>
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">shouldClearInputField</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">shouldEnterEmailInsideInnerIframe</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -582,6 +824,10 @@
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">shouldVerifyReadOnlyFieldValue</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testEmptyFirstName</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -597,6 +843,10 @@
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">shouldFillDetailsInsideIframe</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">shouldHandleConfirmAlert</span>
                 <br/>
               </div> <!-- method-in-group -->
@@ -614,6 +864,18 @@
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">shouldSelectFruitFromDropdown</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testPhoneNumberPattern</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testPhoneNumberPattern_DemoFailedTestCase</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -633,96 +895,140 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(21);
+data.addRows(32);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'shouldHandleSimpleAlert')
-data.setCell(0, 2, 'com.automation.selenium.tests.alert.AlertPageTest')
-data.setCell(0, 3, 7331);
+data.setCell(0, 1, 'dataDrivenTestDevelopment_JsonData')
+data.setCell(0, 2, 'com.automation.selenium.tests.form.FormPageTest')
+data.setCell(0, 3, 11770);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'shouldSelectAndDeselectMultipleSuperheroes')
-data.setCell(1, 2, 'com.automation.selenium.tests.select.SelectPageTest')
-data.setCell(1, 3, 6485);
+data.setCell(1, 1, 'dataDrivenTestDevelopment')
+data.setCell(1, 2, 'com.automation.selenium.tests.form.FormPageTest')
+data.setCell(1, 3, 7611);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'shouldPerformLongPressOnButton')
-data.setCell(2, 2, 'com.automation.selenium.tests.button.ButtonPageTest')
-data.setCell(2, 3, 3479);
+data.setCell(2, 1, 'shouldEnterEmailInsideInnerIframe')
+data.setCell(2, 2, 'com.automation.selenium.tests.frame.FramePageTest')
+data.setCell(2, 3, 6978);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'shouldNavigateToHomePageOnHomeButtonClick')
-data.setCell(3, 2, 'com.automation.selenium.tests.button.ButtonPageTest')
-data.setCell(3, 3, 3123);
+data.setCell(3, 1, 'dataDrivenTestDevelopment')
+data.setCell(3, 2, 'com.automation.selenium.tests.form.FormPageTest')
+data.setCell(3, 3, 6750);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'shouldSelectLanguageByIndex')
-data.setCell(4, 2, 'com.automation.selenium.tests.select.SelectPageTest')
-data.setCell(4, 3, 2840);
+data.setCell(4, 1, 'testFormSubmission')
+data.setCell(4, 2, 'com.automation.selenium.tests.form.FormPageTest')
+data.setCell(4, 3, 6619);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'shouldSelectFruitFromDropdown')
-data.setCell(5, 2, 'com.automation.selenium.tests.select.SelectPageTest')
-data.setCell(5, 3, 2551);
+data.setCell(5, 1, 'shouldVerifyNonEditableField')
+data.setCell(5, 2, 'com.automation.selenium.tests.input.InputPageTest')
+data.setCell(5, 3, 6150);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'shouldSelectLanguageByValue')
+data.setCell(6, 1, 'shouldSelectAndDeselectMultipleSuperheroes')
 data.setCell(6, 2, 'com.automation.selenium.tests.select.SelectPageTest')
-data.setCell(6, 3, 1851);
+data.setCell(6, 3, 6060);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'shouldHandleModernAlertModal')
-data.setCell(7, 2, 'com.automation.selenium.tests.alert.AlertPageTest')
-data.setCell(7, 3, 1540);
+data.setCell(7, 1, 'testPhoneNumberPattern_DemoFailedTestCase')
+data.setCell(7, 2, 'com.automation.selenium.tests.form.FormPageTest')
+data.setCell(7, 3, 5680);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'shouldVerifyAllCountryOptions')
-data.setCell(8, 2, 'com.automation.selenium.tests.select.SelectPageTest')
-data.setCell(8, 3, 1443);
+data.setCell(8, 1, 'testEmptyFirstName')
+data.setCell(8, 2, 'com.automation.selenium.tests.form.FormPageTest')
+data.setCell(8, 3, 5667);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'shouldHandleConfirmAlert')
-data.setCell(9, 2, 'com.automation.selenium.tests.alert.AlertPageTest')
-data.setCell(9, 3, 465);
+data.setCell(9, 1, 'testPhoneNumberPattern')
+data.setCell(9, 2, 'com.automation.selenium.tests.form.FormPageTest')
+data.setCell(9, 3, 5392);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'shouldAppendTextToInputField')
-data.setCell(10, 2, 'com.automation.selenium.tests.input.InputPageTest')
-data.setCell(10, 3, 417);
+data.setCell(10, 1, 'testInvalidEmail')
+data.setCell(10, 2, 'com.automation.selenium.tests.form.FormPageTest')
+data.setCell(10, 3, 5037);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'shouldVerifyButtonBackgroundColor')
-data.setCell(11, 2, 'com.automation.selenium.tests.button.ButtonPageTest')
-data.setCell(11, 3, 292);
+data.setCell(11, 1, 'shouldVerifyAllCountryOptions')
+data.setCell(11, 2, 'com.automation.selenium.tests.select.SelectPageTest')
+data.setCell(11, 3, 4141);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'shouldEnterFullName')
-data.setCell(12, 2, 'com.automation.selenium.tests.input.InputPageTest')
-data.setCell(12, 3, 270);
+data.setCell(12, 1, 'dataDrivenTestDevelopment_JsonData')
+data.setCell(12, 2, 'com.automation.selenium.tests.form.FormPageTest')
+data.setCell(12, 3, 3590);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'shouldClearInputField')
-data.setCell(13, 2, 'com.automation.selenium.tests.input.InputPageTest')
-data.setCell(13, 3, 250);
+data.setCell(13, 1, 'shouldPerformLongPressOnButton')
+data.setCell(13, 2, 'com.automation.selenium.tests.button.ButtonPageTest')
+data.setCell(13, 3, 3546);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'shouldHandlePromptAlert')
-data.setCell(14, 2, 'com.automation.selenium.tests.alert.AlertPageTest')
-data.setCell(14, 3, 216);
+data.setCell(14, 1, 'shouldSelectFruitFromDropdown')
+data.setCell(14, 2, 'com.automation.selenium.tests.select.SelectPageTest')
+data.setCell(14, 3, 1766);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'shouldGetTextFromDisabledField')
-data.setCell(15, 2, 'com.automation.selenium.tests.input.InputPageTest')
-data.setCell(15, 3, 185);
+data.setCell(15, 1, 'testPhoneNumberPattern_DemoFailedTestCase')
+data.setCell(15, 2, 'com.automation.selenium.tests.form.FormPageTest')
+data.setCell(15, 3, 1407);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'shouldVerifyReadOnlyFieldValue')
-data.setCell(16, 2, 'com.automation.selenium.tests.input.InputPageTest')
-data.setCell(16, 3, 182);
+data.setCell(16, 1, 'shouldSelectLanguageByIndex')
+data.setCell(16, 2, 'com.automation.selenium.tests.select.SelectPageTest')
+data.setCell(16, 3, 1089);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'shouldVerifyNonEditableField')
-data.setCell(17, 2, 'com.automation.selenium.tests.input.InputPageTest')
-data.setCell(17, 3, 144);
+data.setCell(17, 1, 'shouldHandlePromptAlert')
+data.setCell(17, 2, 'com.automation.selenium.tests.alert.AlertPageTest')
+data.setCell(17, 3, 869);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'shouldVerifyButtonDimensions')
+data.setCell(18, 1, 'shouldNavigateToHomePageOnHomeButtonClick')
 data.setCell(18, 2, 'com.automation.selenium.tests.button.ButtonPageTest')
-data.setCell(18, 3, 117);
+data.setCell(18, 3, 868);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'shouldFetchXAndYPositionOfButton')
-data.setCell(19, 2, 'com.automation.selenium.tests.button.ButtonPageTest')
-data.setCell(19, 3, 76);
+data.setCell(19, 1, 'shouldFillDetailsInsideIframe')
+data.setCell(19, 2, 'com.automation.selenium.tests.frame.FramePageTest')
+data.setCell(19, 3, 652);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'exampleTestCaseFirst')
-data.setCell(20, 2, 'com.automation.selenium.tests.LoginTest')
-data.setCell(20, 3, 24);
+data.setCell(20, 1, 'shouldGetTextFromDisabledField')
+data.setCell(20, 2, 'com.automation.selenium.tests.input.InputPageTest')
+data.setCell(20, 3, 634);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'shouldHandleModernAlertModal')
+data.setCell(21, 2, 'com.automation.selenium.tests.alert.AlertPageTest')
+data.setCell(21, 3, 633);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'shouldHandleSimpleAlert')
+data.setCell(22, 2, 'com.automation.selenium.tests.alert.AlertPageTest')
+data.setCell(22, 3, 555);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'shouldClearInputField')
+data.setCell(23, 2, 'com.automation.selenium.tests.input.InputPageTest')
+data.setCell(23, 3, 456);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'shouldEnterFullName')
+data.setCell(24, 2, 'com.automation.selenium.tests.input.InputPageTest')
+data.setCell(24, 3, 376);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'shouldAppendTextToInputField')
+data.setCell(25, 2, 'com.automation.selenium.tests.input.InputPageTest')
+data.setCell(25, 3, 362);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'shouldHandleConfirmAlert')
+data.setCell(26, 2, 'com.automation.selenium.tests.alert.AlertPageTest')
+data.setCell(26, 3, 287);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'shouldSelectLanguageByValue')
+data.setCell(27, 2, 'com.automation.selenium.tests.select.SelectPageTest')
+data.setCell(27, 3, 221);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'shouldVerifyButtonDimensions')
+data.setCell(28, 2, 'com.automation.selenium.tests.button.ButtonPageTest')
+data.setCell(28, 3, 107);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'shouldVerifyButtonBackgroundColor')
+data.setCell(29, 2, 'com.automation.selenium.tests.button.ButtonPageTest')
+data.setCell(29, 3, 82);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'shouldFetchXAndYPositionOfButton')
+data.setCell(30, 2, 'com.automation.selenium.tests.button.ButtonPageTest')
+data.setCell(30, 3, 78);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'shouldVerifyReadOnlyFieldValue')
+data.setCell(31, 2, 'com.automation.selenium.tests.input.InputPageTest')
+data.setCell(31, 3, 67);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -737,12 +1043,14 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.automation.selenium.tests.LoginTest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">exampleTestCaseFirst</span>
+                <br/>
                 <span class="ignored-method-name">exampleTestCaseSecond</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -762,21 +1070,61 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.frame.FramePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
                 <span class="method-start">2 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">3 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">3 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
                 <span class="method-start">3 ms</span>
@@ -788,501 +1136,721 @@ return data;
                 <span class="method-name">launchApplication</span>
                 <span class="method-start">3 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
                 <span class="method-start">3 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
                 <span class="method-start">3 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">3 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">4 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">4 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">4 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">4 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">4 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">4 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">4 ms</span>
+                <span class="method-start">3 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">4 ms</span>
+                <span class="method-start">3 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.frame.FramePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">3 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">3 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">4 ms</span>
+                <span class="method-start">3 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">4 ms</span>
+                <span class="method-start">3 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">3 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">4 ms</span>
+                <span class="method-start">3 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">4 ms</span>
+                <span class="method-start">1224 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">4 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">4 ms</span>
+                <span class="method-start">4416 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">tempSetUp</span>
-                <span class="method-start">4859 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">tempSetUp</span>
-                <span class="method-start">5485 ms</span>
+                <span class="method-start">6001 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.automation.selenium.tests.frame.FramePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">tempSetUp</span>
-                <span class="method-start">6719 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">tempSetUp</span>
-                <span class="method-start">7291 ms</span>
+                <span class="method-start">6022 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">tempSetUp</span>
-                <span class="method-start">7614 ms</span>
+                <span class="method-start">6155 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">tempSetUp</span>
-                <span class="method-start">9717 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">tempSetUp</span>
-                <span class="method-start">9764 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.automation.selenium.tests.frame.FramePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">exampleTestCaseFirst</span>
-                <span class="method-start">9851 ms</span>
+                <span class="method-name">shouldEnterEmailInsideInnerIframe</span>
+                <span class="method-start">6893 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">7055 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">8019 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">8331 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldClearInputField</span>
+                <span class="method-start">8925 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">9187 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldPerformLongPressOnButton</span>
+                <span class="method-start">9318 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">9386 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">11152 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">11965 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldEnterFullName</span>
+                <span class="method-start">12793 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">12839 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">12865 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13170 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">shouldVerifyNonEditableField</span>
+                <span class="method-start">13581 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.frame.FramePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">13768 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldAppendTextToInputField</span>
+                <span class="method-start">13821 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.frame.FramePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13871 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14184 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">14852 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">14907 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldFetchXAndYPositionOfButton</span>
+                <span class="method-start">15492 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9879 ms</span>
+                <span class="method-start">15571 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">15667 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">16070 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testEmptyFirstName</span>
+                <span class="method-start">16797 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">16836 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">17142 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">dataDrivenTestDevelopment_JsonData({"firstName":"Rahul","lastName":"Gohil","email":"bhargav@mail.com","countryCode":"91","phone":"12345...)</span>
+                <span class="method-start">17487 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">17721 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldGetTextFromDisabledField</span>
+                <span class="method-start">18303 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">18952 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">19092 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">19459 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19732 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">19805 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">dataDrivenTestDevelopment(Bhargav, Gohil)</span>
+                <span class="method-start">19896 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">20025 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">20226 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">20816 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldHandlePromptAlert</span>
+                <span class="method-start">21022 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldNavigateToHomePageOnHomeButtonClick</span>
+                <span class="method-start">21064 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">21892 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">tempSetUp</span>
-                <span class="method-start">10196 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">21933 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">tempSetUp</span>
-                <span class="method-start">12491 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22465 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">tempSetUp</span>
-                <span class="method-start">12833 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">com.automation.selenium.tests.frame.FramePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldFillDetailsInsideIframe</span>
+                <span class="method-start">23383 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testPhoneNumberPattern_DemoFailedTestCase</span>
+                <span class="method-start">23993 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.frame.FramePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24036 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">tempSetUp</span>
-                <span class="method-start">12947 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">tempSetUp</span>
-                <span class="method-start">13608 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">tempSetUp</span>
-                <span class="method-start">14154 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">tempSetUp</span>
-                <span class="method-start">14197 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">tempSetUp</span>
-                <span class="method-start">14199 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">tempSetUp</span>
-                <span class="method-start">14316 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">tempSetUp</span>
-                <span class="method-start">14351 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">tempSetUp</span>
-                <span class="method-start">14410 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">tempSetUp</span>
-                <span class="method-start">16293 ms</span>
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">24158 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldVerifyButtonBackgroundColor</span>
+                <span class="method-start">24164 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24247 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">tempSetUp</span>
-                <span class="method-start">16622 ms</span>
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">24406 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testPhoneNumberPattern</span>
+                <span class="method-start">24896 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">shouldVerifyButtonDimensions</span>
+                <span class="method-start">25053 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">25062 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">shouldHandleSimpleAlert</span>
-                <span class="method-start">17546 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">shouldSelectLanguageByIndex</span>
-                <span class="method-start">20827 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">shouldGetTextFromDisabledField</span>
-                <span class="method-start">21178 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">shouldVerifyNonEditableField</span>
-                <span class="method-start">21219 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">21364 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">21365 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">shouldNavigateToHomePageOnHomeButtonClick</span>
-                <span class="method-start">22042 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">shouldFetchXAndYPositionOfButton</span>
-                <span class="method-start">22235 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">shouldAppendTextToInputField</span>
-                <span class="method-start">22287 ms</span>
+                <span class="method-start">25108 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">22312 ms</span>
+                <span class="method-start">25161 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">shouldVerifyButtonDimensions</span>
-                <span class="method-start">22636 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">22706 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">22754 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">shouldSelectFruitFromDropdown</span>
-                <span class="method-start">22847 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">shouldHandleConfirmAlert</span>
-                <span class="method-start">23516 ms</span>
+                <span class="method-start">25167 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">25365 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23668 ms</span>
+                <span class="method-start">25455 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">25664 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">shouldPerformLongPressOnButton</span>
-                <span class="method-start">23696 ms</span>
+                <span class="method-name">testInvalidEmail</span>
+                <span class="method-start">26599 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">26758 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">shouldSelectLanguageByValue</span>
-                <span class="method-start">23696 ms</span>
+                <span class="method-name">testFormSubmission</span>
+                <span class="method-start">27252 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">shouldHandleModernAlertModal</span>
-                <span class="method-start">23886 ms</span>
+                <span class="method-start">27340 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23982 ms</span>
+                <span class="method-start">27507 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">27973 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">shouldEnterFullName</span>
-                <span class="method-start">24019 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">28666 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">29261 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">29673 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30289 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">31636 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">shouldSelectAndDeselectMultipleSuperheroes</span>
-                <span class="method-start">24088 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">32096 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">32197 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">33371 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">33871 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">33999 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">35659 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldVerifyAllCountryOptions</span>
-                <span class="method-start">24142 ms</span>
+                <span class="method-start">36421 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">shouldVerifyReadOnlyFieldValue</span>
-                <span class="method-start">24189 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">24290 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">24372 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">shouldClearInputField</span>
-                <span class="method-start">24842 ms</span>
+                <span class="method-start">36863 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">24878 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">shouldVerifyButtonBackgroundColor</span>
-                <span class="method-start">25019 ms</span>
+                <span class="method-name">shouldSelectAndDeselectMultipleSuperheroes</span>
+                <span class="method-start">36876 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.input.InputPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25093 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">25166 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">25312 ms</span>
+                <span class="method-start">36930 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">25399 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">25426 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">25548 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">25586 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.alert.AlertPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">shouldHandlePromptAlert</span>
-                <span class="method-start">25613 ms</span>
+                <span class="method-name">shouldSelectFruitFromDropdown</span>
+                <span class="method-start">37501 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">38755 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">39268 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">shouldSelectLanguageByIndex</span>
+                <span class="method-start">39311 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">39660 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">39704 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40401 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40562 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">shouldSelectLanguageByValue</span>
+                <span class="method-start">40732 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25830 ms</span>
+                <span class="method-start">40953 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.selenium.tests.button.ButtonPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">27175 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">41634 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">42069 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dataDrivenTestDevelopment(Jay, Panchal)</span>
+                <span class="method-start">42435 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">tempSetUp</span>
+                <span class="method-start">42676 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.selenium.tests.select.SelectPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">30573 ms</span>
+                <span class="method-start">42936 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.selenium.tests.form.FormPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">dataDrivenTestDevelopment_JsonData({"firstName":"Rajesh","lastName":"Patel","email":"john.doe@example.com","countryCode":"91","phone":"...)</span>
+                <span class="method-start">46189 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testPhoneNumberPattern_DemoFailedTestCase</span>
+                <span class="method-start">46521 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48261 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">49186 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">49780 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

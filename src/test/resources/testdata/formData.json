@@ -1,0 +1,32 @@
+{
+  "formData": [
+    {
+      "firstName": "Rahul",
+      "lastName": "Gohil",
+      "email": "bhargav@mail.com",
+      "countryCode": "91",
+      "phone": "1234567890",
+      "address1": "123 Main St",
+      "address2": "Apt 4B",
+      "state": "NY",
+      "postalCode": "10001",
+      "country": "India",
+      "dob": "1990-01-01",
+      "gender": "male"
+    },
+    {
+      "firstName": "Rajesh",
+      "lastName": "Patel",
+      "email": "john.doe@example.com",
+      "countryCode": "91",
+      "phone": "9876543210",
+      "address1": "456 Elm St",
+      "address2": "Flat 2A",
+      "state": "CA",
+      "postalCode": "90001",
+      "country": "India",
+      "dob": "1992-05-10",
+      "gender": "male"
+    }
+  ]
+}
