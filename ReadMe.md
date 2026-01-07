@@ -46,55 +46,6 @@ This is designed as a real-world, production-style automation framework, not a d
 
 ---
 
-## Project Structure
-my-selenium-framework
-
-│
-├── pom.xml
-├── testng.xml
-├── README.md
-│
-├── src
-│   └── test
-│       ├── java
-│       │   └── com.automation.selenium
-│       │       ├── core
-│       │       │   ├── BaseTest.java
-│       │       │   ├── DriverFactory.java
-│       │       │   ├── Listeners.java
-│       │       │   └── RetryAnalyzer.java
-│       │       │
-│       │       ├── reporting
-│       │       │   ├── ExtentReport.java
-│       │       │   ├── ExtentManager.java
-│       │       │   └── ExtentLogger.java
-│       │       │
-│       │       ├── annotations
-│       │       │   ├── Author.java
-│       │       │   ├── Feature.java
-│       │       │   └── Story.java
-│       │       │
-│       │       ├── pages
-│       │       │   └── (Page Object classes)
-│       │       │
-│       │       ├── tests
-│       │       │   └── (Test classes)
-│       │       │
-│       │       └── utils
-│       │           └── ConfigLoader.java
-│       │
-│       └── resources
-│           └── config
-│               ├── config.properties
-│               ├── config-qa.properties
-│               ├── config-staging.properties
-│               └── config-prod.properties
-│
-└── reports
-└── index.html
-
----
-
 ## Execution Flow
 
 1. Maven starts test execution
@@ -130,7 +81,7 @@ The framework supports multiple environments without changing test code.
 - username=qa_user
 - password=qa_password
 
-# How to Run Tests
+## How to Run Tests
 
 ### Run on QA (default)
 mvn clean test -Denv=qa
@@ -141,7 +92,7 @@ mvn clean test -Denv=staging
 ### Run on Production
 mvn clean test -Denv=prod
 
-# Parallel Execution
+## Parallel Execution
 Parallel execution is controlled by TestNG, not Maven profiles.
 
 ### In testng.xml:
@@ -154,7 +105,7 @@ Parallel execution is controlled by TestNG, not Maven profiles.
 
 ---
 
-# Selenium Grid Execution
+## Selenium Grid Execution
 
 1. **Start Selenium Grid**:
     `java -jar selenium-server-4.x.x.jar standalone`
@@ -171,7 +122,7 @@ Parallel execution is controlled by TestNG, not Maven profiles.
 
 ---
 
-# Retry Mechanism
+## Retry Mechanism
 ### Flaky tests are handled using a Retry Analyzer.
     RetryAnalyzer: RetryAnalyzer implements IRetryAnalyzer
 
@@ -186,7 +137,7 @@ Parallel execution is controlled by TestNG, not Maven profiles.
 
 ---
 
-# Reporting (Extent Reports)
+## Reporting (Extent Reports)
 Report Location
     '/reports/index.html'
 
@@ -211,7 +162,7 @@ Per test:
 
 ---
 
-# Annotations
+## Annotations
 Author
     `@Author("Bhargav")`
 
@@ -230,7 +181,7 @@ Story
 
 ---
 
-# Step Logging
+## Step Logging
 Steps are logged using ExtentLogger.
 
 Example:
@@ -244,7 +195,7 @@ Example:
 
 ---
 
-# Design Principles
+## Design Principles
 - Separation of concerns
 - Thread safety
 - Environment independence
@@ -253,7 +204,7 @@ Example:
 
 ---
 
-# Future Enhancements
+## Future Enhancements
 - API automation module
 - Severity / Priority annotations
 - Dockerized Selenium Grid

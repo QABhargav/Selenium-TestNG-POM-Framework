@@ -22,7 +22,7 @@ public class FormPageTest extends BaseTest {
 
     @Test(groups = {"Critical", "Regression"},retryAnalyzer = Retry.class)  //invocationCount = 5
     @Author("Bhargav")
-    public void testFormSubmission() throws InterruptedException {
+    public void testFormSubmission() {
 
         FormPage formPage = new FormPage(getDriver());
         formPage.enterFirstName("John");
@@ -76,7 +76,7 @@ public class FormPageTest extends BaseTest {
 
     @Test(groups = {"Smoke", "Regression"},retryAnalyzer = Retry.class)
     @Author("Bhargav")
-    public void testInvalidEmail() throws InterruptedException {
+    public void testInvalidEmail() {
         FormPage formPage = new FormPage(getDriver());
         formPage.enterFirstName("John");
         formPage.enterLastName("Doe");
@@ -166,7 +166,7 @@ public class FormPageTest extends BaseTest {
 
     @Test(groups = {"Regression"}, dataProvider = "inputData", dataProviderClass = DataProviderUtils.class)
     @Author("Bhargav")
-    public void dataDrivenTestDevelopment(String firstName, String lastName) throws InterruptedException {
+    public void dataDrivenTestDevelopment(String firstName, String lastName) {
         ExtentLogger.info("In this test data used from excel file");
         FormPage formPage = new FormPage(getDriver());
         formPage.enterFirstName(firstName);

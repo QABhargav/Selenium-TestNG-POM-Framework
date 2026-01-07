@@ -70,4 +70,17 @@ public class AlertPageTest extends BaseTest {
         ExtentLogger.pass("Modern alert modal verified and closed successfully");
     }
 
+    @Test(enabled = false)
+    public void exampleTestCaseFirst() throws InterruptedException {
+        boolean abc = true;
+        Assert.assertTrue(abc);
+        ExtentLogger.fail("This is an example of a failed test case");
+    }
+
+    @Test(enabled = false)
+    public void exampleTestCaseSecond() throws InterruptedException {
+        boolean abc = true;
+        Assert.assertTrue(abc);
+    }
+
 }
