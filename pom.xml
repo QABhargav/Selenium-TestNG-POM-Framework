@@ -15,8 +15,6 @@
         <groups></groups>
     </properties>
 
-
-
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -107,6 +105,5 @@
 
         </plugins>
     </build>
-
 
 </project>
